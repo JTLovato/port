@@ -1,0 +1,192 @@
+* {
+    font-family: "Bebas Neue", Sans-Serif;
+}
+
+:root {
+    --brand-main: #2D2838;
+    --brand-secondary: #f8f9fa;
+  }
+
+body {
+    background-color: var(--brand-secondary);
+    background-image: url(../img/bg.png);
+    padding: 0;
+    color: var(--brand-main);
+}
+
+
+/* Navigation */
+
+.container-fluid {
+    padding-left: 0;
+}
+.navbar-brand {
+    background-color: var(--brand-main);
+    font-size: 2rem;
+    color: var(--brand-secondary) !important;
+    padding: 0 1rem 0 2rem;
+}
+
+li {
+    font-size: 2rem;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-size: 1.5rem;
+}
+
+.navbar-collapse {
+     margin-right: 1rem;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-nav .nav-link {
+    text-align: center;
+}
+
+
+
+/* Landing */
+
+.welcome-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: calc(100vh - 64px);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.welcome {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.welcome h2 {
+    font-size: 2.5rem;
+}
+
+.welcome h1 {
+    display: none;
+}
+
+.svg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    width: 90%;
+}
+
+.st0 {
+    fill: var(--brand-main);
+    transition: all 0.1s ease-in-out;
+}
+
+.st1 {
+    fill:var(--brand-secondary);
+    transition: all 0.1s ease-in-out;
+}
+
+.dark-mode {
+    fill: var(--brand-secondary);
+    transition: all 0.1s ease-in-out;
+}
+.dark-mode-bg {
+    background-color: var(--brand-main);
+    transition: all 0.1s ease-in-out;
+}
+
+.dark-mode-oppo {
+    fill: var(--brand-main);
+    transition: all 0.1s ease-in-out;
+}
+
+/* Contact */
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: calc(100vh - 64px);
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.contact-info input {
+    min-height: 40px;
+}
+
+.contact-info label {
+    margin-top: 10px;
+}
+
+.contact-info textarea {
+    height: 40vh;
+}
+
+.contact-info h1,
+.contact-info input, 
+.contact-info label,
+.contact-info textarea {
+    min-width: 100%;
+}
+
+/* About Container */
+
+
+.about-container {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 64px);
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.about-container {
+    text-align: center;
+}
+
+.about-pic {
+     width: 50%;
+     margin: 50px 0 20px;
+}
+
+p q {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+p a {
+    color: var(--brand-main);
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: var(--brand-main);
+    display: flex;
+    justify-content: space-between;
+    color: var(--brand-secondary);
+    margin-bottom: 10px;
+}
+
+footer h3 {
+    margin: 5px 20px;
+}

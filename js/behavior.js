@@ -2,7 +2,7 @@
 let btn = document.getElementById('btn');
 let d = new Date();
 const one_day = 1000 * 60 * 60 * 24 
-const creation = new Date(1986, 6, 19) 
+const creation = new Date(1986, 5, 19) 
 const Result = Math.round( d.getTime() - creation.getTime()) / (one_day); 
 const Final_Result = Result.toFixed(0); 
 let birthday = (Final_Result); 

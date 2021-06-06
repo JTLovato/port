@@ -14,6 +14,10 @@ body {
     color: var(--brand-main);
 }
 
+a {
+    color: var(--brand-main);
+}
+
 
 /* Navigation */
 
@@ -171,11 +175,6 @@ p q {
     text-decoration: underline;
 }
 
-p a {
-    color: var(--brand-main);
-}
-
-
 /* Designs & Coding */
 
 .port-container {
@@ -228,11 +227,9 @@ p a {
 
 .modal-body {
     overflow: hidden;
+    background-image: url(../img/bg.png);
 }
 
-
-
-/* Container box to set the sides relative to */
 .cube {
 	width: 30%;
 	text-align: center;
@@ -241,14 +238,12 @@ p a {
     width: 100%;
 	transition: transform 0.5s ease-in-out; 
 	transform-style: preserve-3d; 
-    background-image: url(../img/bg.png);
 }
 
 .first, 
 .second {
 	height: 700px;
     width: 100%;
-
 }
 
 .first{
@@ -257,6 +252,8 @@ p a {
 
 .second {
 	transform: rotateX(-90deg) translateZ(-350px);
+    padding: 10px;
+    overflow: scroll;
 }
 
 .cube-rotate {
@@ -277,10 +274,38 @@ p a {
     max-width: 100%;
     max-height: 600px;
     -webkit-box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.5); 
-box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.5);
 }
 
+.code-info-container h1 {
+    margin-top: 10px;
+    text-decoration: underline;
+}
 
+.code-info-container a {
+    font-size: 1.2rem;
+}
+
+.design-info {
+    border-bottom: 2px lightgray solid;
+}
+
+.design-info-container p {
+    margin-top: 0;
+    font-family: sans-serif;
+    font-size: 0.6rem;
+    text-align: center;
+    border-bottom: 2px lightgray solid;
+}
+
+.design-info-container img,
+.design-info-rest-container img  {
+    width: 100%;
+}
+
+.design-info-rest-container img {
+    margin-bottom: 5px;
+}
 
 
 /* Footer */

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" media="screen"/>
+    <title>About John</title>
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        lets create!
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">WELCOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">DESIGN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./code.html" tabindex="-1" aria-disabled="true">CODE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html" tabindex="-1" aria-disabled="true">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html" tabindex="-1" aria-disabled="true">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" id="btn" onClick="colors()" class="btn btn-secondary">Dark mode</button>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <body id="body">
+
+
+    <div class="port-container">
+        <div class="port-example-container">
+            <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalIslanders">
+                <p>New York Islanders</p>
+                <img src="img/design-islanders.jpg" />
+            </button>
+            <div class="modal fade" id="modalIslanders" tabindex="-1" aria-labelledby="modalIslanders" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="port-example-container">
+            <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalDazzlingData">
+                <p>Dazzling Data</p>
+                <img src="img/design-dazzlingdata.jpg" />
+            </button>
+            <div class="modal fade" id="modalDazzlingData" tabindex="-1" aria-labelledby="modalDazzlingData" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="port-example-container">
+            <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalIllustrations">
+                <p>Illustrations</p>
+                <img src="img/design-illustrations.jpg" />
+            </button>
+            <div class="modal fade" id="modalIllustrations" tabindex="-1" aria-labelledby="modalIllustrations" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="port-example-container">
+            <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalNonProfit">
+                <p>Non-profits</p>
+                <img src="img/design-nonprofit.jpg" />
+            </button>
+            <div class="modal fade" id="modalNonProfit" tabindex="-1" aria-labelledby="modalNonProfit" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="port-example-container">
+            <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalMisc">
+                <p>Misc logos</p>
+                <img src="img/design-misc.jpg" />
+            </button>
+            <div class="modal fade" id="modalMisc" tabindex="-1" aria-labelledby="modalMisc" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="port-example-container">
+            <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalWallpapers">
+                <p>Wallpapers</p>
+                <img src="img/design-wallpapers.jpg" />
+            </button>
+            <div class="modal fade" id="modalWallpapers" tabindex="-1" aria-labelledby="modalWallpapers" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="port-example-container">
+            <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalSoSiMakeup">
+                <p>SoSi Makeup</p>
+                <img src="img/design-sosi.jpg" />
+            </button>
+            <div class="modal fade" id="modalSoSiMakeup" tabindex="-1" aria-labelledby="modalSoSiMakeup" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="port-example-container">
+            <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalTradingCards">
+                <p>Trading Cards</p>
+                <img src="img/design-cards.jpg" />
+            </button>
+            <div class="modal fade" id="modalTradingCards" tabindex="-1" aria-labelledby="modalTradingCards" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="port-example-container">
+            <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalMachine">
+                <p>Michigan Machine</p>
+                <img src="img/design-machine.jpg" />
+            </button>
+            <div class="modal fade" id="modalMachine" tabindex="-1" aria-labelledby="modalMachine" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="port-example-container">
+            <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalExercise">
+                <p>Exercise Apparel</p>
+                <img src="img/design-exercise.jpg" />
+            </button>
+            <div class="modal fade" id="modalExercise" tabindex="-1" aria-labelledby="modalExercise" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <footer>
+      <h3 id="footer">
+      </h3>
+      <h3>
+        John T Lovato
+      </h3>
+    </footer>
+    <script type="text/javascript" src="./js/behavior.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>

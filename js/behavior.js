@@ -61,7 +61,16 @@ function colors() {
     aboutSpan.innerHTML = birthday + " ";
 
 
+    // Code
 
+
+    function flip() {
+        var cube = document.getElementById('cube');  
+        cube.classList.add("cube-rotate")
+    }
+    
+
+    
 
 // Footer
 

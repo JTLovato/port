@@ -1,72 +1,72 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css" media="screen"/>
-    <title>About John</title>
-  </head>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">
-        lets create!
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarToggler">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">WELCOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./design.html" tabindex="-1" aria-disabled="true">DESIGN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CODE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html" tabindex="-1" aria-disabled="true">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html" tabindex="-1" aria-disabled="true">CONTACT</a>
-          </li>
-          <li class="nav-item">
-            <button type="button" id="btn" onClick="colors()" class="btn btn-secondary">Dark mode</button>
-          </li>
-      </div>
-    </div>
-  </nav>
-  <body id="body">
-    <div class="port-container">
-
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./styles/styles.css" media="screen"/>
+        <title>About John</title>
+    </head>
+    <body id="body">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    lets create!
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">WELCOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./design.html" tabindex="-1" aria-disabled="true">DESIGN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">CODE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html" tabindex="-1" aria-disabled="true">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html" tabindex="-1" aria-disabled="true">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" id="btn" onClick="colors()" class="btn btn-secondary">Dark mode</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="port-container">
             <div class="port-example-container">
                 <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalSteelLine">
                     <p>Steel | Line</p>
-                    <img src="img/code-steelline.jpg" />
+                    <img src="img/code-steelline.jpg" alt="Button to connect to Steel Line Info" />
                 </button>
                 <div class="modal fade" id="modalSteelLine" tabindex="-1" aria-labelledby="modalSteelLine" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="modalSteelLine">Steel | Line</h5>
+                                <h5 class="modal-title">Steel | Line</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <div class="cube" id="cube">
+                                <div class="cube" >
                                     <div class="first">
-                                        <img class="bolt" src="img/bolt1.png" />
-                                        <button class="btn" id="buttonflipUp" onClick="rotate()">Click To See The Details</button>
-                                        <img class="bolt" src="img/bolt2.png" />
-                                        <img class="page-img" src="./img/steelline-page.jpg" />
+                                        <img class="bolt" src="img/bolt1.png" alt="" />
+                                        <button class="btn" onClick="rotate()">Click To See The Details</button>
+                                        <img class="bolt" src="img/bolt2.png" alt="" />
+                                        <img class="page-img" src="./img/steelline-page.jpg" alt="Screenshot of entire Steel Line main page." />
                                     </div>
                                     <div class="second">
-                                        <img class="bolt" src="img/bolt1.png" />
-                                        <button class="btn" id="buttonflipDown" onClick="rotate()">Click To See The Results</button>
-                                        <img class="bolt" src="img/bolt2.png" />
+                                        <img class="bolt" src="img/bolt1.png" alt=""  />
+                                        <button class="btn" onClick="rotate()">Click To See The Results</button>
+                                        <img class="bolt" src="img/bolt2.png" alt="" />
                                         <div class="code-info-container">
                                             <h1>Overview</h1>
                                             <p>I wanted to create an e-commerce site, completely functional, with a way to create products, sell and ship, search by several parameters, add to and remove from cart, create users and admins, launch on heroku, utilize Mongo DB, Postman, and more. This was my first project in React.</p>
@@ -86,31 +86,30 @@
                     </div>
                 </div>
             </div>
-            
             <div class="port-example-container">
                 <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalBookbound">
                     <p>Bookbound</p>
-                    <img src="img/code-bookbound.jpg" />
+                    <img src="img/code-bookbound.jpg" alt="Button to connect to Bookbound info" />
                 </button>
                 <div class="modal fade" id="modalBookbound" tabindex="-1" aria-labelledby="modalBookbound" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="modalBookbound">Bookbound</h5>
+                                <h5 class="modal-title" >Bookbound</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <div class="cube" id="cube">
+                                <div class="cube" >
                                     <div class="first">
-                                        <img class="bolt" src="img/bolt1.png" />
-                                        <button class="btn" id="buttonflipUp" onClick="rotate()">Click To See The Details</button>
-                                        <img class="bolt" src="img/bolt2.png" />
-                                        <img class="page-img" src="./img/page-bookbound.jpg" />
+                                        <img class="bolt" src="img/bolt1.png" alt="" />
+                                        <button class="btn" onClick="rotate()">Click To See The Details</button>
+                                        <img class="bolt" src="img/bolt2.png" alt="" />
+                                        <img class="page-img" src="./img/page-bookbound.jpg" alt="Screenshot of the entire Bookbound main page" />
                                     </div>
                                     <div class="second">
-                                        <img class="bolt" src="img/bolt1.png" />
-                                        <button class="btn" id="buttonflipDown" onClick="rotate()">Click To See The Results</button>
-                                        <img class="bolt" src="img/bolt2.png" />
+                                        <img class="bolt" src="img/bolt1.png" alt="" />
+                                        <button class="btn" onClick="rotate()">Click To See The Results</button>
+                                        <img class="bolt" src="img/bolt2.png" alt="" />
                                         <div class="code-info-container">
                                             <h1>Overview</h1>
                                             <p>I wanted to create a simple, great looking one-page site for book lovers, that incorperated a book club and gave users a way to find others.</p>
@@ -130,31 +129,30 @@
                     </div>
                 </div>
             </div>
-            
             <div class="port-example-container">
                 <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalZeroGBar">
                     <p>Zero-G bar</p>
-                    <img src="img/code-zerogbar.jpg" />
+                    <img src="img/code-zerogbar.jpg" alt="Button to connect to Zero G Bar info." />
                 </button>
                 <div class="modal fade" id="modalZeroGBar" tabindex="-1" aria-labelledby="modalZeroGBar" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="modalZeroGBar">Zero-G Bar</h5>
+                                <h5 class="modal-title" >Zero-G Bar</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <div class="cube" id="cube">
+                                <div class="cube" >
                                     <div class="first">
-                                        <img class="bolt" src="img/bolt1.png" />
-                                        <button class="btn" id="buttonflipUp" onClick="rotate()">Click To See The Details</button>
-                                        <img class="bolt" src="img/bolt2.png" />
-                                        <img class="page-img" src="./img/page-zeroGBar.jpg" />
+                                        <img class="bolt" src="img/bolt1.png" alt="" />
+                                        <button class="btn" onClick="rotate()">Click To See The Details</button>
+                                        <img class="bolt" src="img/bolt2.png" alt="" />
+                                        <img class="page-img" src="./img/page-zeroGBar.jpg" alt="Screenshot of entire ero G Bar main page." />
                                     </div>
                                     <div class="second">
-                                        <img class="bolt" src="img/bolt1.png" />
-                                        <button class="btn" id="buttonflipDown" onClick="rotate()">Click To See The Results</button>
-                                        <img class="bolt" src="img/bolt2.png" />
+                                        <img class="bolt" src="img/bolt1.png" alt="" />
+                                        <button class="btn" onClick="rotate()">Click To See The Results</button>
+                                        <img class="bolt" src="img/bolt2.png" alt="" />
                                         <div class="code-info-container">
                                             <h1>Overview</h1>
                                             <p>A site for a galaxy-themed bar, simple but had just what you needed for a bar; drinks, menus, and live music. This site was me focusing more on mobile view ports, while also attempting to "tone down" how much I do in code. At this point I was still learning and found myself making the code much more complicated than it needed to be. This was a project I made during my time at Treehouse Bootcamp.</p>
@@ -174,31 +172,30 @@
                     </div>
                 </div>
             </div>
-
             <div class="port-example-container">
                 <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalGoalie">
                     <p>The Goalie Mask Project</p>
-                    <img src="img/code-TGMP.jpg" />
+                    <img src="img/code-TGMP.jpg" alt="Button to connect to the Goalie Mask Project" />
                 </button>
                 <div class="modal fade" id="modalGoalie" tabindex="-1" aria-labelledby="modalGoalie" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="modalGoalie">The Goalie Mask Project</h5>
+                                <h5 class="modal-title" >The Goalie Mask Project</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <div class="cube" id="cube">
+                                <div class="cube" >
                                     <div class="first">
-                                        <img class="bolt" src="img/bolt1.png" />
-                                        <button class="btn" id="buttonflipUp" onClick="rotate()">Click To See The Details</button>
-                                        <img class="bolt" src="img/bolt2.png" />
-                                        <img class="page-img" src="./img/page-tgmp.jpg" />
+                                        <img class="bolt" src="img/bolt1.png" alt="" />
+                                        <button class="btn" onClick="rotate()">Click To See The Details</button>
+                                        <img class="bolt" src="img/bolt2.png" alt="" />
+                                        <img class="page-img" src="./img/page-tgmp.jpg" alt="Screenshot of the entire main page of the Goalie Mask Project" />
                                     </div>
                                     <div class="second">
-                                        <img class="bolt" src="img/bolt1.png" />
-                                        <button class="btn" id="buttonflipDown" onClick="rotate()">Click To See The Results</button>
-                                        <img class="bolt" src="img/bolt2.png" />
+                                        <img class="bolt" src="img/bolt1.png" alt="" />
+                                        <button class="btn" onClick="rotate()">Click To See The Results</button>
+                                        <img class="bolt" src="img/bolt2.png" alt="" />
                                         <div class="code-info-container">
                                             <h1>Overview</h1>
                                             <p>A bit of a pet project of mine. I wanted to showcase the history of goalie masks through hockey history, which would include each current teams goalie tandem's masks, an ability to search by team or player, as well as a blog and news from around the National Hockey League. This was a project I made during my time at Treehouse Bootcamp.</p>
@@ -218,31 +215,30 @@
                     </div>
                 </div>
             </div>
-
             <div class="port-example-container">
                 <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalCover">
                     <p>Cover</p>
-                    <img src="img/code-cover.jpg" />
+                    <img src="img/code-cover.jpg" alt="Button to connect to the Cover info." />
                 </button>
                 <div class="modal fade" id="modalCover" tabindex="-1" aria-labelledby="modalCover" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="modalCover">Cover</h5>
+                                <h5 class="modal-title" >Cover</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <div class="cube" id="cube">
+                                <div class="cube" >
                                     <div class="first">
-                                        <img class="bolt" src="img/bolt1.png" />
-                                        <button class="btn" id="buttonflipUp" onClick="rotate()">Click To See The Details</button>
-                                        <img class="bolt" src="img/bolt2.png" />
-                                        <img class="page-img" src="./img/page-cover.jpg" />
+                                        <img class="bolt" src="img/bolt1.png" alt="" />
+                                        <button class="btn" onClick="rotate()">Click To See The Details</button>
+                                        <img class="bolt" src="img/bolt2.png" alt="" />
+                                        <img class="page-img" src="./img/page-cover.jpg" alt="Screenshot of the entire main page of Cover" />
                                     </div>
                                     <div class="second">
-                                        <img class="bolt" src="img/bolt1.png" />
-                                        <button class="btn" id="buttonflipDown" onClick="rotate()">Click To See The Results</button>
-                                        <img class="bolt" src="img/bolt2.png" />
+                                        <img class="bolt" src="img/bolt1.png" alt="" />
+                                        <button class="btn" onClick="rotate()">Click To See The Results</button>
+                                        <img class="bolt" src="img/bolt2.png" alt="" />
                                         <div class="code-info-container">
                                             <h1>Overview</h1>
                                             <p>I love covers of songs, it's an amazing of hearing some of your favorite songs in an entire different light. From "Blue Eyes" to "Hurt", I wanted to create a site that focuses specifically on covers, done with entirely new instruments, in entirely different genres. This was a project I made during my time at Treehouse Bootcamp.</p>
@@ -262,31 +258,30 @@
                     </div>
                 </div>
             </div>
-
             <div class="port-example-container">
                 <button type="button" class="port-btn btn" data-bs-toggle="modal" data-bs-target="#modalHonee">
                     <p>Honee</p>
-                    <img src="img/code-honee.jpg" />
+                    <img src="img/code-honee.jpg" alt="Button to connect to the Honee info." />
                 </button>
                 <div class="modal fade" id="modalHonee" tabindex="-1" aria-labelledby="modalHonee" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="modalHonee"">Honee</h5>
+                                <h5 class="modal-title" >Honee</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <div class="cube" id="cube">
+                                <div class="cube" >
                                     <div class="first">
-                                        <img class="bolt" src="img/bolt1.png" />
-                                        <button class="btn" id="buttonflipUp" onClick="rotate()">Click To See The Details</button>
-                                        <img class="bolt" src="img/bolt2.png" />
-                                        <img class="page-img" src="./img/page-honee.jpg" />
+                                        <img class="bolt" src="img/bolt1.png" alt="" />
+                                        <button class="btn" onClick="rotate()">Click To See The Details</button>
+                                        <img class="bolt" src="img/bolt2.png" alt="" />
+                                        <img class="page-img" src="./img/page-honee.jpg" alt="Entire screenhot of the main page of Honee" />
                                     </div>
                                     <div class="second">
-                                        <img class="bolt" src="img/bolt1.png" />
-                                        <button class="btn" id="buttonflipDown" onClick="rotate()">Click To See The Results</button>
-                                        <img class="bolt" src="img/bolt2.png" />
+                                        <img class="bolt" src="img/bolt1.png" alt="" />
+                                        <button class="btn" onClick="rotate()">Click To See The Results</button>
+                                        <img class="bolt" src="img/bolt2.png" alt="" />
                                         <div class="code-info-container">
                                             <h1>Overview</h1>
                                             <p>I wanted to make a site that would help BLPOC. During 2020 I saw a lot of injustice happening, and a lot of people asking how they could help, before quickly giving up and moving on with their lives. I wanted to make a difference, even a small one, and create a site that helps BiPOC connect with one another and discuss the world, and the state of their physical and mental health.</p>
@@ -306,14 +301,13 @@
                     </div>
                 </div>
             </div>
-
-    </div>
-    <footer>
-      <h3>
-        John T Lovato
-      </h3>
-    </footer>
-    <script type="text/javascript" src="./js/behavior.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  </body>
+        </div>
+        <footer>
+            <h3>
+                John T Lovato
+            </h3>
+        </footer>
+        <script type="text/javascript" src="./js/behavior.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </body>
 </html>

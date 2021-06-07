@@ -2,6 +2,10 @@
     font-family: "Bebas Neue", Sans-Serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 :root {
     --brand-main: #2D2838;
     --brand-secondary: #f8f9fa;

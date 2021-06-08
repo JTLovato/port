@@ -268,8 +268,7 @@ p q {
     height: 12px;
 }
 
-#buttonflipUp,
-#buttonflipDown {
+.flip {
     font-size: 1.2rem;
     text-decoration: underline;
 }
@@ -322,3 +321,11 @@ footer {
     color: var(--brand-secondary);
     margin-bottom: 10px;
 }
+
+
+/* Media Queries */
+
+@media (min-width: 769px) {
+    {
+   
+    }

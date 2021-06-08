@@ -8,6 +8,8 @@ const Final_Result = Result.toFixed(0);
 let birthday = (Final_Result); 
 let aboutSpan = document.getElementById("about-span");
 
+
+
 function colors() {
     let st0 = document.getElementsByClassName('st0');
     let circle = document.getElementById('circle');

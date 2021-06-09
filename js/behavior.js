@@ -8,6 +8,96 @@ const Final_Result = Result.toFixed(0);
 let birthday = (Final_Result); 
 let aboutSpan = document.getElementById("about-span");
 
+// Landing
+
+
+
+// let name = document.getElementById('name-changer')
+
+let Names = ["An Artist!", "A Painter!", "A Composer", "A Craftsman", "An Artisan", 
+    "Wonderful!", "Fantastic!", "Creative!", "Thoughtful", "Amazing!", "Talented!", "Powerful!", 
+    "An Architect", "Professional", "A Poet!", "Confident!", "Optmistic!", "Passionate!", 
+    "Decisive!", "Engaging!", "Kind", "Reliable", "Trustworthy", "A Visonary", "Zealous",
+    "Innovative", "Inventive", "Original", "Clever!", "Productive", "Artistic!",
+    "A Dreamer!", "Omnific", "A Goalie", "A Gamer", "A Thinker!", "A Speaker", 
+    "Courageous!", "Aware!", "Patient", "Honest", "Sincere", "Authentic", "Driven!", "Supportive", 
+    "Generous", "Funny!", "Autonomous", "Articulate", "Adventurous!", "Ambitious!", "Calm", 
+    "Charismatic", "Competitive!", "Cooperative", "Curious!", "Devoted", "Diligent", "Efficient", 
+    "Flexible", "Focused", "Friendly!", "Imaginative!", "Inquisitive!", "Open", "Perceptive", 
+    "Resourceful!", "Responsible", "Respectful", "Tranquil",
+]
+
+
+
+    async function sleep(milliseconds) {
+        return new Promise(resolve => setTimeout(resolve, milliseconds));
+    }
+
+    async function quick(change) {
+        let nameFlip = document.getElementById('name-changer');
+        for (let i = 0; i < change; i++) {
+            nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+            await sleep(15);
+        }
+    }
+
+    async function rapidNames() {
+        let nameFlip = document.getElementById('name-changer');
+        nameFlip.innerHTML = "A Lot Of Things...";
+        await sleep(3000);
+        for (let i = 0; i < 4; i++) {
+            quick(10);
+            nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+            await sleep(1000);
+        }
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
+        nameFlip.innerHTML = "A Designer!";
+        nameFlip.style.fontSize = "7.5rem";
+        await sleep(1000);   
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
+        nameFlip.innerHTML = "A Developer";
+        nameFlip.style.fontSize = "8rem";
+        await sleep(1000);     
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
+        nameFlip.innerHTML = "John!";
+        nameFlip.style.fontSize = "8.5rem";
+        nameFlip.style.textDecoration = "underline";
+    }
+    rapidNames();
+
+    
+
+
+
+
+
 
 
 function colors() {
@@ -65,3 +155,5 @@ function rotate() {
         cube[i].classList.toggle("cube-rotate");
     }
 }
+
+

@@ -75,7 +75,6 @@ li {
 
 .welcome {
     text-align: center;
-    width: 100%;
     margin-bottom: 15px;
 }
 
@@ -85,6 +84,37 @@ li {
 
 .welcome h1 {
     display: none;
+}
+
+.flip-cube {
+	width: 30%;
+	text-align: center;
+	margin: 0 auto;
+	height: 200px;
+    width: 400px;
+	transition: transform 0.5s ease-in-out; 
+	transform-style: preserve-3d; 
+}
+
+.flip-first, 
+.flip-second {
+	height: 200px;
+    width: 400px;
+}
+
+.flip-first{
+	transform: translateZ(100px);
+    overflow: scroll;
+}
+
+.flip-second {
+	transform: rotateX(-90deg) translateZ(-100px);
+    padding: 10px;
+    overflow: scroll;
+}
+
+.cube-rotate {
+	transform: rotateX(90deg);
 }
 
 .logo {
@@ -267,6 +297,7 @@ p q {
 
 .bolt {
     height: 12px;
+    width: 38px;
 }
 
 .flip {
@@ -276,7 +307,6 @@ p q {
 
 .page-img {
     max-width: 100%;
-    /* max-height: 600px; */
     -webkit-box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.5); 
     box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.5);
 }
@@ -316,6 +346,7 @@ p q {
 .design-info-container img,
 .design-info-rest-container img  {
     width: 100%;
+    margin-bottom: 5px;
 }
 
 .design-info-rest-container {
@@ -338,6 +369,16 @@ footer {
     justify-content: center;
     color: var(--brand-secondary);
     margin-bottom: 10px;
+    align-items: center;
+}
+
+footer h3 {
+    margin: 3px;
+}
+
+footer img {
+    height: 20px; 
+    margin: 3px 5px;
 }
 
 
@@ -351,6 +392,10 @@ footer {
 
     .about-container {
         font-size: 1.5rem;
+    }
+
+    .about-info-text p:last-of-type{
+        width: 100%;
     }
 
     p q {
@@ -403,10 +448,13 @@ footer {
     .welcome h1 {
         display: block;
         font-size: 7rem;
+        min-width: 500px;
+        text-align: center;
+        margin-bottom: 0;
     }
 
     .logo {
-        width: 100%;
+        width: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -415,9 +463,21 @@ footer {
     svg {
         width: 400px;
     }
+
+    .design-info-container {
+        padding: 0 20px;
+    }
     
     .design-info-container:nth-child(even) {
         flex-direction: row;
+    }
+
+    .design-info-container:last-of-type {
+        border-bottom: 0;
+    } 
+
+    .design-info {
+        font-size: 1.5rem;
     }
 
     .design-info-container p {
@@ -434,6 +494,14 @@ footer {
         width: 400px;
         font-size: 2rem;
         margin-left: 20px;
+    }
+
+    .code-info-container p {
+        font-size: 1.5rem;
+    }
+
+    .flip {
+        font-size: 1.8rem;
     }
 
     .port-container {

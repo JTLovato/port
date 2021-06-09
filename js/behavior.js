@@ -7,6 +7,7 @@ const Result = Math.round( d.getTime() - creation.getTime()) / (one_day);
 const Final_Result = Result.toFixed(0); 
 let birthday = (Final_Result); 
 let aboutSpan = document.getElementById("about-span");
+let nameFlip = document.getElementById('name-changer');
 
 // Landing
 
@@ -34,22 +35,22 @@ let Names = ["An Artist!", "A Painter!", "A Composer", "A Craftsman", "An Artisa
     }
 
     async function quick(change) {
-        let nameFlip = document.getElementById('name-changer');
         for (let i = 0; i < change; i++) {
             nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
-            await sleep(15);
+            await sleep(10);
         }
     }
 
     async function rapidNames() {
-        let nameFlip = document.getElementById('name-changer');
         nameFlip.innerHTML = "A Lot Of Things...";
         await sleep(3000);
         for (let i = 0; i < 4; i++) {
-            quick(10);
+            quick(40);
             nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
-            await sleep(1000);
+            await sleep(1500);
         }
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
         nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
         await sleep(15);
         nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
@@ -62,7 +63,9 @@ let Names = ["An Artist!", "A Painter!", "A Composer", "A Craftsman", "An Artisa
         await sleep(15);
         nameFlip.innerHTML = "A Designer!";
         nameFlip.style.fontSize = "7.5rem";
-        await sleep(1000);   
+        await sleep(1000);  
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
         nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
         await sleep(15);
         nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
@@ -86,9 +89,10 @@ let Names = ["An Artist!", "A Painter!", "A Composer", "A Craftsman", "An Artisa
         await sleep(15);
         nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
         await sleep(15);
+        nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
+        await sleep(15);
         nameFlip.innerHTML = "John!";
         nameFlip.style.fontSize = "8.5rem";
-        nameFlip.style.textDecoration = "underline";
     }
     rapidNames();
 

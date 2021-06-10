@@ -25,15 +25,6 @@ let Names = ["An Artist!", "A Painter!", "A Composer", "A Craftsman", "An Artisa
 // Navigation
 
 
-function colors() {
-    let btn = document.getElementById('btn');
-    if (btn.innerHTML == "DARK MODE") {
-    btn.innerHTML = "LIGHT MODE";
-    } else {
-        btn.innerHTML = "DARK MODE";
-    }
-}
-
 let togButton = document.getElementById("btn");
 darkOn = localStorage.getItem("dark") == "true" ? true : false;
 setTheme();
@@ -42,8 +33,10 @@ function setTheme(){
     localStorage.setItem("dark", darkOn ? "true" : "false");
     if(darkOn){
         document.body.setAttribute("theme", "dark");
+        togButton.innerHTML = "LIGHT MODE";
     } else {
         document.body.setAttribute("theme", "light");
+        togButton.innerHTML = "DARK MODE";
     }
 }
 

@@ -8,13 +8,6 @@ const Final_Result = Result.toFixed(0);
 let birthday = (Final_Result); 
 let aboutSpan = document.getElementById("about-span");
 let nameFlip = document.getElementById('name-changer');
-
-// Landing
-
-
-
-// let name = document.getElementById('name-changer')
-
 let Names = ["An Artist!", "A Painter!", "A Composer", "A Craftsman", "An Artisan", 
     "Wonderful!", "Fantastic!", "Creative!", "Thoughtful", "Amazing!", "Talented!", "Powerful!", 
     "An Architect", "Professional", "A Poet!", "Confident!", "Optmistic!", "Passionate!", 
@@ -24,11 +17,49 @@ let Names = ["An Artist!", "A Painter!", "A Composer", "A Craftsman", "An Artisa
     "Courageous!", "Aware!", "Patient", "Honest", "Sincere", "Authentic", "Driven!", "Supportive", 
     "Generous", "Funny!", "Autonomous", "Articulate", "Adventurous!", "Ambitious!", "Calm", 
     "Charismatic", "Competitive!", "Cooperative", "Curious!", "Devoted", "Diligent", "Efficient", 
-    "Flexible", "Focused", "Friendly!", "Imaginative!", "Inquisitive!", "Open", "Perceptive", 
+    "Flexible", "Focused", "Friendly!", "Imaginative!", "Open", "Perceptive", 
     "Resourceful!", "Responsible", "Respectful", "Tranquil",
 ]
 
 
+// Navigation
+
+
+function colors() {
+    let btn = document.getElementById('btn');
+    if (btn.innerHTML == "DARK MODE") {
+    btn.innerHTML = "LIGHT MODE";
+    } else {
+        btn.innerHTML = "DARK MODE";
+    }
+}
+
+let togButton = document.getElementById("btn");
+darkOn = localStorage.getItem("dark") == "true" ? true : false;
+setTheme();
+
+function setTheme(){
+    localStorage.setItem("dark", darkOn ? "true" : "false");
+    if(darkOn){
+        document.body.setAttribute("theme", "dark");
+    } else {
+        document.body.setAttribute("theme", "light");
+    }
+}
+
+var darkOn = false;
+function toggle(){
+    darkOn = !darkOn;
+    setTheme();
+}
+
+togButton.addEventListener("click", toggle);
+
+
+
+
+
+// Landing
 
     async function sleep(milliseconds) {
         return new Promise(resolve => setTimeout(resolve, milliseconds));
@@ -44,6 +75,7 @@ let Names = ["An Artist!", "A Painter!", "A Composer", "A Craftsman", "An Artisa
     async function rapidNames() {
         nameFlip.innerHTML = "A Lot Of Things...";
         await sleep(3000);
+        nameFlip.style.fontSize = "7rem";
         for (let i = 0; i < 4; i++) {
             quick(40);
             nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
@@ -96,68 +128,38 @@ let Names = ["An Artist!", "A Painter!", "A Composer", "A Craftsman", "An Artisa
     }
     rapidNames();
 
-    
-
-
-
-
-
-
-
-function colors() {
-    let st0 = document.getElementsByClassName('st0');
-    let circle = document.getElementById('circle');
-    let bg = document.getElementById('body');
-    let btn = document.getElementById('btn');
-
-    for(let i = 0, length = st0.length; i < length; i++) {
-        st0[i].classList.toggle("dark-mode");
-        console.log("Ugh");
-        }
-    bg.classList.toggle("dark-mode-bg");
-    circle.classList.toggle("dark-mode-oppo");
-    
-    if (btn.innerHTML == "DARK MODE") {
-    btn.innerHTML = "LIGHT MODE";
-    } else {
-        btn.innerHTML = "DARK MODE";
-    }
-}
-
     // Contact Below
 
-window.onload = function() {
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        this.contact_number.value = Math.random() * 100000 | 0;
-        emailjs.sendForm('service_rlhl0xh', 'template_3s0flsq', this)
-            .then(function() {
-                let contactInfo = document.getElementById("contact-info");
-                console.log('SUCCESS!');
-                contactInfo.innerHTML = "Thanks! We'll get back to you as soon as possible.";
-            }, function(error) {
-                let contactInfo = document.getElementById("contact-info");
-                console.log('FAILED...', error);
-                contactInfo.innerHTML = "Hang on.....something went wrong..somewhere....<br></br>How about this? Just email me directly at jtlovato@gmail.com. Thanks!";
-            });
-    });
-}
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            this.contact_number.value = Math.random() * 100000 | 0;
+            emailjs.sendForm('service_rlhl0xh', 'template_3s0flsq', this)
+                .then(function() {
+                    let contactInfo = document.getElementById("contact-info");
+                    console.log('SUCCESS!');
+                    contactInfo.innerHTML = "Thanks! We'll get back to you as soon as possible.";
+                }, function(error) {
+                    let contactInfo = document.getElementById("contact-info");
+                    console.log('FAILED...', error);
+                    contactInfo.innerHTML = "Hang on.....something went wrong..somewhere....<br></br>How about this? Just email me directly at jtlovato@gmail.com. Thanks!";
+                });
+        });
+    }
 
     // About page
 
-aboutSpan.innerHTML = birthday + " ";
+    aboutSpan.innerHTML = birthday + " ";
 
 
-    // Code
+        // Code
 
 
-function rotate() {
+    function rotate() {
 
-    let cube = document.getElementsByClassName('cube');
-            
-    for(let i = 0, length = cube.length; i < length; i++) {
-        cube[i].classList.toggle("cube-rotate");
+        let cube = document.getElementsByClassName('cube');
+                
+        for(let i = 0, length = cube.length; i < length; i++) {
+            cube[i].classList.toggle("cube-rotate");
+        }
     }
-}
-
-

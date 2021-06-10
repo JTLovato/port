@@ -1,5 +1,6 @@
 * {
     font-family: "Bebas Neue", Sans-Serif;
+    transition: all 0.1s ease-in-out;
 }
 
 html {
@@ -20,10 +21,20 @@ body {
 
 a {
     color: var(--brand-main);
+    transition: all 0.1s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--brand-main);
 }
 
 
 /* Navigation */
+
+nav {
+    background-color: var(--brand-secondary);
+    opacity: 95%;
+}
 
 .container-fluid {
     padding-left: 0;
@@ -48,8 +59,25 @@ li {
     font-size: 1.5rem;
 }
 
+.btn-secondary {
+    background-color: transparent;
+    color: var(--brand-main);
+}
+
+.btn-check:active+.btn-secondary, 
+.btn-check:checked+.btn-secondary, 
+.btn-secondary.active, 
+.btn-secondary:active, 
+.show>.btn-secondary.dropdown-toggle,
+.btn-check:focus+.btn-secondary, 
+.btn-secondary:focus,
+.btn-secondary:hover {
+    background-color: transparent;
+    color: var(--brand-main);
+}
+
 .navbar-collapse {
-     margin-right: 1rem;
+    margin-right: 1rem;
 }
 
 .navbar-collapse {
@@ -60,7 +88,40 @@ li {
     text-align: center;
 }
 
+.btn-close {
+    background-color: var(--brand-secondary);
+}
 
+.st0 {
+    fill: var(--brand-main);
+    transition: all 0.1s ease-in-out;
+}
+
+.st1 {
+    fill:var(--brand-secondary);
+    transition: all 0.1s ease-in-out;
+}
+
+
+body[theme=light] .colorChange{
+    color: var(--brand-main) !important;
+    background-color: var(--brand-secondary) !important;
+}
+
+body[theme=dark] .colorChange{
+    fill: var(--brand-secondary) !important;
+    color: var(--brand-secondary) !important;
+    background-color: var(--brand-main) !important;
+}
+
+body[theme=dark] .colorChangeOppo{
+    color: var(--brand-main) !important;
+    background-color: var(--brand-secondary) !important;
+}
+
+body[theme=dark] .colorChangeCircle{
+    fill: var(--brand-main) !important;
+}
 
 /* Landing */
 
@@ -86,33 +147,6 @@ li {
     display: none;
 }
 
-.flip-cube {
-	width: 30%;
-	text-align: center;
-	margin: 0 auto;
-	height: 200px;
-    width: 400px;
-	transition: transform 0.5s ease-in-out; 
-	transform-style: preserve-3d; 
-}
-
-.flip-first, 
-.flip-second {
-	height: 200px;
-    width: 400px;
-}
-
-.flip-first{
-	transform: translateZ(100px);
-    overflow: scroll;
-}
-
-.flip-second {
-	transform: rotateX(-90deg) translateZ(-100px);
-    padding: 10px;
-    overflow: scroll;
-}
-
 .cube-rotate {
 	transform: rotateX(90deg);
 }
@@ -128,29 +162,6 @@ svg {
     width: 350px;
 }
 
-.st0 {
-    fill: var(--brand-main);
-    transition: all 0.1s ease-in-out;
-}
-
-.st1 {
-    fill:var(--brand-secondary);
-    transition: all 0.1s ease-in-out;
-}
-
-.dark-mode {
-    fill: var(--brand-secondary);
-    transition: all 0.1s ease-in-out;
-}
-.dark-mode-bg {
-    background-color: var(--brand-main);
-    transition: all 0.1s ease-in-out;
-}
-
-.dark-mode-oppo {
-    fill: var(--brand-main);
-    transition: all 0.1s ease-in-out;
-}
 
 /* Contact */
 
@@ -370,6 +381,7 @@ footer {
     color: var(--brand-secondary);
     margin-bottom: 10px;
     align-items: center;
+    border-top: 2px solid var(--brand-secondary);
 }
 
 footer h3 {
@@ -447,12 +459,12 @@ footer img {
 
     .welcome h1 {
         display: block;
-        font-size: 7rem;
+        font-size: 5rem;
         min-width: 500px;
         text-align: center;
         margin-bottom: 0;
     }
-    
+
     .logo {
         width: 500px;
         display: flex;
@@ -506,10 +518,6 @@ footer img {
 
     .port-container {
         padding: 50px;
-    }
-
-    .port-example-container {
-        margin: 1px;
     }
 
     .contact-container {

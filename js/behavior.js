@@ -8,6 +8,8 @@ const Final_Result = Result.toFixed(0);
 let birthday = (Final_Result); 
 let aboutSpan = document.getElementById("about-span");
 let nameFlip = document.getElementById('name-changer');
+let contact = document.getElementById('contact-form')
+let contactInfo = document.getElementById("contact-info");
 let Names = ["An Artist!", "A Painter!", "A Composer", "A Craftsman", "An Artisan", 
     "Wonderful!", "Fantastic!", "Creative!", "Thoughtful", "Amazing!", "Talented!", "Powerful!", 
     "An Architect", "Professional", "A Poet!", "Confident!", "Optmistic!", "Passionate!", 
@@ -124,21 +126,23 @@ togButton.addEventListener("click", toggle);
     // Contact Below
 
     window.onload = function() {
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
+        if (contact) {
+        contact.addEventListener('submit', function(event) {
             event.preventDefault();
             this.contact_number.value = Math.random() * 100000 | 0;
             emailjs.sendForm('service_rlhl0xh', 'template_3s0flsq', this)
                 .then(function() {
-                    let contactInfo = document.getElementById("contact-info");
                     console.log('SUCCESS!');
+                    contactInfo.style.fontSize = "2.5rem"
                     contactInfo.innerHTML = "Thanks! We'll get back to you as soon as possible.";
                 }, function(error) {
-                    let contactInfo = document.getElementById("contact-info");
                     console.log('FAILED...', error);
+                    contactInfo.style.fontSize = "2.5rem"
                     contactInfo.innerHTML = "Hang on.....something went wrong..somewhere....<br></br>How about this? Just email me directly at jtlovato@gmail.com. Thanks!";
                 });
         });
     }
+}
 
     // About page
 

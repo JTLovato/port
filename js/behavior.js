@@ -68,6 +68,7 @@ togButton.addEventListener("click", toggle);
     }
 
     async function rapidNames() {
+        if(nameFlip) {
         nameFlip.innerHTML = "A Lot Of Things...";
         await sleep(3000);
         nameFlip.style.fontSize = "7rem";
@@ -119,7 +120,7 @@ togButton.addEventListener("click", toggle);
         nameFlip.innerHTML = Names[Math.floor(Math.random() * Names.length)];
         await sleep(15);
         nameFlip.innerHTML = "John!";
-        nameFlip.style.fontSize = "8.5rem";
+        nameFlip.style.fontSize = "8.5rem";}
     }
     rapidNames();
 
@@ -145,9 +146,9 @@ togButton.addEventListener("click", toggle);
 }
 
     // About page
-
+    if (aboutSpan) {
     aboutSpan.innerHTML = birthday + " ";
-
+    }
 
         // Code
 

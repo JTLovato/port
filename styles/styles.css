@@ -177,6 +177,7 @@ svg {
     align-items: center;
     justify-content: space-around;
     padding: 20px;
+    margin-top: 40px;
 }
 
 .contact-info input {
@@ -232,7 +233,7 @@ p q {
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .port-example-container {

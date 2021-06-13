@@ -109,8 +109,14 @@ body[theme=light] .colorChange{
 
 body[theme=light] .colorChangeBG{
     color: var(--brand-main) !important;
-    background-image: url(../img/bg.png);
+    background-image: url(../img/bg.png) !important;
 }
+
+body[theme=dark] .colorChangeBG{
+    color: var(--brand-secondary) !important;
+    background-color: var(--brand-main) !important;
+}
+
 
 body[theme=dark] .colorChange{
     fill: var(--brand-secondary) !important;
@@ -537,6 +543,7 @@ footer img {
     .about-collapse {
         display: flex;
         flex-wrap: nowrap;
+        align-items: center;
     }
 
     .about-pic{

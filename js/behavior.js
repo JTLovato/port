@@ -10,6 +10,10 @@ let aboutSpan = document.getElementById("about-span");
 let nameFlip = document.getElementById('name-changer');
 let contact = document.getElementById('contact-form')
 let contactInfo = document.getElementById("contact-info");
+let userName = document.getElementById('user_name');
+let message = document.getElementById('message');
+let userEmail = document.getElementById('user_email');
+let contactTrouble = document.getElementById('contact_trouble');
 let Names = ["An Artist!", "A Painter!", "A Composer", "A Craftsman", "An Artisan", 
     "Wonderful!", "Fantastic!", "Creative!", "Thoughtful", "Amazing!", "Talented!", "Powerful!", 
     "An Architect", "Professional", "A Poet!", "Confident!", "Optmistic!", "Passionate!", 
@@ -130,6 +134,10 @@ togButton.addEventListener("click", toggle);
         if (contact) {
         contact.addEventListener('submit', function(event) {
             event.preventDefault();
+            if ( userEmail.value === "" || userName.value === "" || message.value ==="") {
+                contactTrouble.style.display = "block";
+                console.log("test");
+            } else {
             this.contact_number.value = Math.random() * 100000 | 0;
             emailjs.sendForm('service_rlhl0xh', 'template_3s0flsq', this)
                 .then(function() {
@@ -139,9 +147,10 @@ togButton.addEventListener("click", toggle);
                 }, function(error) {
                     console.log('FAILED...', error);
                     contactInfo.style.fontSize = "2.5rem"
+                    console.log(error);
                     contactInfo.innerHTML = "Hang on.....something went wrong..somewhere....<br></br>How about this? Just email me directly at jtlovato@gmail.com. Thanks!";
                 });
-        });
+        }});
     }
 }
 

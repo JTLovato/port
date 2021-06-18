@@ -65,13 +65,26 @@
         <h1>
           Say Hi
         </h1>
-        <input type="hidden" name="contact_number">
-        <label>Name</label>
-        <input type="text" name="user_name">
+        <input type="hidden" id="contact_number" name="contact_number">
+        <label for="user_name">Name</label>
+        <input 
+          type="text" 
+          id="user_name" 
+          name="user_name" 
+          placeholder="Enter your Name Here">
         <label>Email</label>
-        <input type="email" name="user_email">
+        <input 
+          type="email" 
+          id="user_email" 
+          name="user_email" 
+          placeholder="Enter your Email Here">
         <label>Message</label>
-        <textarea name="message"></textarea>
+        <textarea 
+          name="message" 
+          id="message"
+          placeholder="Say Hi!">
+        </textarea>
+        <div class="contact_trouble" id="contact_trouble">Please Fill Out The Form Completely</div>
         <input class="contact-send" type="submit" value="Send">
       </div>
     </form>

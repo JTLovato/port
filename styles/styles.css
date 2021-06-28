@@ -186,6 +186,23 @@ svg {
     margin-top: 40px;
 }
 
+.icon-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-container a {
+    padding: 10px;
+    background-color: var(--brand-secondary);
+    border-radius: 2px;
+    border: 1px solid var(--brand-main);
+}
+
+.icon-container a:hover {
+    transform: scale(1.1);
+}
+
 .contact-info input {
     min-height: 40px;
     padding-left: 10px;
@@ -208,6 +225,11 @@ svg {
 .contact-info label,
 .contact-info textarea {
     min-width: 100%;
+}
+
+.contact-info h1 {
+    text-align: center;
+    margin: 40px 0 10px;
 }
 
 .contact_trouble {
@@ -550,7 +572,7 @@ footer img {
     }
 
     .contact-container {
-        margin-top: 50px;
+        margin-top: 70px;
     }
 
     .about-container {

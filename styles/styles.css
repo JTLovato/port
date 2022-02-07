@@ -52,6 +52,7 @@ li {
 .nav-item {
     display: flex;
     justify-content: center;
+    padding: 0 10px;
 }
 
 .btn {
@@ -102,44 +103,23 @@ li {
 }
 
 
-body[theme=light] .colorChange{
-    color: var(--brand-main) !important;
-    background-color: var(--brand-secondary) !important;
-}
-
-body[theme=light] .colorChangeBG{
-    color: var(--brand-main) !important;
-    background-image: url(../img/bg.png) !important;
-}
-
-body[theme=dark] .colorChangeBG{
-    color: var(--brand-secondary) !important;
-    background-color: var(--brand-main) !important;
-}
 
 
-body[theme=dark] .colorChange{
-    fill: var(--brand-secondary) !important;
-    color: var(--brand-secondary) !important;
-    background-color: var(--brand-main) !important;
-}
-
-body[theme=dark] .colorChangeOppo{
-    color: var(--brand-main) !important;
-    background-color: var(--brand-secondary) !important;
-}
-
-body[theme=dark] .colorChangeCircle{
-    fill: var(--brand-main) !important;
-}
 
 /* Landing */
+
+.welcome-container-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
 .welcome-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    min-height: calc(100vh - 64px);
+    min-height: calc(100vh - 32px);
     align-items: center;
     justify-content: space-around;
 }
@@ -149,28 +129,64 @@ body[theme=dark] .colorChangeCircle{
     margin-bottom: 15px;
 }
 
-.welcome h2 {
-    font-size: 2.5rem;
-}
-
-.welcome h1 {
-    display: none;
-}
-
-.cube-rotate {
-	transform: rotateX(90deg);
-}
-
 .logo {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 svg {
-    width: 350px;
+    width: 325px;
 }
+
+.resumeHold {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lower-resume{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resumeButtonWelcome:hover {
+    color: var(--brand-secondary);
+    transform: scale( 1.1);
+}
+
+.resumeButtonWelcome {
+    background-image: url(../img/brush_stroke.png);
+    width: 300px;
+    height: 89px;
+    background-size: cover;
+    border-radius: 3px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: var(--brand-secondary);
+    font-size: 200%;
+    margin-top: 3px;
+    transition: all 0.25s ease-in-out;
+}
+
+.brush2 {
+    background-image: url(../img/brush_stroke_2.png);
+}
+
+.brush3 {
+    background-image: url(../img/brush_stroke_3.png);
+}
+
+.brush4 {
+    background-image: url(../img/brush_stroke_4.png);
+}
+
 
 
 /* Contact */
@@ -265,7 +281,7 @@ svg {
 .about-container h1 {
     min-width: 100%;
     text-decoration: underline;
-    font-size: 300%;
+    margin: 20px auto 10px;
 }
 
 q {
@@ -279,6 +295,91 @@ q {
     margin: 0 15px 0 0;
 }
 
+.resumeButton {
+    width: 250px;
+    height: 50px;
+    border-radius: 3px;
+    margin-top: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* projects */
+
+.project-container {
+    width: 100%;
+    margin-top: 70px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-container h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.project-ex {
+    width: 400px;
+    margin: 1%;
+    border-radius: 3px;
+    border: solid 1px var(--brand-main);
+}
+
+.project-pic {
+    width: 100%;
+}
+
+.project-image {
+    width: 100%;
+}
+
+.project-info {
+    width: 100%;
+    padding: 10px;
+}
+
+.project-tools {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 5px 0;
+}
+
+.project-tools p {
+    margin: 0 5px;
+}
+
+.project-links {
+    margin: 10px 0;
+}
+
+.project-links a {
+    padding: 4px 12px 2px;
+    border-radius: 5px;
+    background-color: var(--brand-main);
+    text-decoration: none;
+    color: var( --brand-secondary);
+    margin-right: 3px;
+    border: none;
+}
+
+.project-links a:hover {
+    background-color: var(--brand-secondary);
+    color: var(--brand-main);
+    border: solid 1px var(--brand-main);
+}
+
+.project-info h2 {
+    margin: 0;
+}
+
+.project-info h4 {
+    font-size: 125%;
+}
 /* Designs & Coding */
 
 .port-container {
@@ -438,7 +539,6 @@ footer {
     display: flex;
     justify-content: center;
     color: var(--brand-secondary);
-    margin-bottom: 10px;
     align-items: center;
     border-top: 2px solid var(--brand-secondary);
 }
@@ -497,17 +597,6 @@ footer img {
         font-size: 5rem;
     }
 
-    .welcome-container-blocks {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-
-    .welcome,
-    .logo {
-        margin: 0 30px;
-    }
-
     .welcome h1 {
         display: block;
         font-size: 5rem;
@@ -517,10 +606,10 @@ footer img {
     }
 
     .logo {
-        width: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: 100px;
     }
     
     svg {
@@ -584,13 +673,13 @@ footer img {
 
     .about-info-holder {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
     
     .about-text,
     .testimonials {
-        width: 46%;
+        width: 60%;
     }
 
     .profile-pic {
@@ -622,4 +711,25 @@ footer img {
     .quote-bottom {
         margin-bottom: 30px;
     }
+
+    .welcome {
+        display: none;
+    }
+
+    .resumeButton {
+        margin-left: calc(50% - 225px);
+        margin-right: calc(50% - 225px);
+    }
+
+    .welcome-container-blocks {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        margin-top: 50px;
+        justify-content: space-between;
+    }
+    
+    .lower-resume{
+        width: 300px;
+    }
+    
 }

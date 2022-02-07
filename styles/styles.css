@@ -158,6 +158,14 @@ svg {
     transform: scale( 1.1);
 }
 
+.resumeButtonWelcome:focus {
+    border: none;
+}
+
+btn-secondary:hover {
+    border: none;
+}
+
 .resumeButtonWelcome {
     background-image: url(../img/brush_stroke.png);
     width: 300px;

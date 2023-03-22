@@ -292,6 +292,10 @@ btn-secondary:hover {
     margin: 20px auto 10px;
 }
 
+.underConstruction {
+    min-width: 100%;
+}
+
 q {
     margin-top: 20px;
 }

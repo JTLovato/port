@@ -326,7 +326,7 @@ q {
 }
 
 .project-container h1,
-.underConstruction {
+.project-container h3 {
     width: 100%;
     text-align: center;
 }

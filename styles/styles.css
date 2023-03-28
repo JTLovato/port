@@ -1,6 +1,6 @@
 * {
-    font-family: "Bebas Neue", Sans-Serif;
     transition: all 0.1s ease-in-out;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -10,6 +10,7 @@ html {
 :root {
     --brand-main: #2D2838;
     --brand-secondary: #f8f9fa;
+    --brand-main-font: "Bebas Neue", Sans-Serif;
   }
 
 body {
@@ -43,6 +44,7 @@ nav {
     font-size: 2rem;
     color: var(--brand-secondary) !important;
     padding: 0 1rem 0 2rem;
+    font-family: var(--brand-main-font);
 }
 
 li {
@@ -53,6 +55,10 @@ li {
     display: flex;
     justify-content: center;
     padding: 0 10px;
+}
+
+.nav-item a {
+    font-family: var(--brand-main-font) !important; 
 }
 
 .btn {
@@ -181,6 +187,7 @@ btn-secondary:hover {
     font-size: 200%;
     margin-top: 3px;
     transition: all 0.25s ease-in-out;
+    font-family: var(--brand-main-font);
 }
 
 .brush2 {
@@ -254,6 +261,7 @@ btn-secondary:hover {
 .contact-info h1 {
     text-align: center;
     margin: 40px 0 10px;
+    font-family: var(--brand-main-font);
 }
 
 .contact_trouble {
@@ -290,6 +298,7 @@ btn-secondary:hover {
     min-width: 100%;
     text-decoration: underline;
     margin: 20px auto 10px;
+    font-family: var(--brand-main-font);
 }
 
 q {
@@ -329,6 +338,7 @@ q {
 .project-container h3 {
     width: 100%;
     text-align: center;
+    font-family: var(--brand-main-font); 
 }
 
 .project-ex {
@@ -363,6 +373,10 @@ q {
     width: 100%;
     padding: 10px;
     background-color: var(--brand-secondary);
+}
+
+.project-info h2 {
+    font-family: var(--brand-main-font); 
 }
 
 .project-tools {
@@ -417,6 +431,7 @@ q {
 .project-description {
     width: 100%;
     text-align: center;
+    font-family: var(--brand-main-font); 
 }
 
 .project-description {
@@ -775,7 +790,8 @@ footer img {
 
     .testimonials q span {
         text-decoration: underline;
-        font-size: 125%;
+        font-size: 105%;
+        font-family: var(--brand-main-font);
     }
     
     .quote,

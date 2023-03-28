@@ -334,28 +334,46 @@ q {
 .project-ex {
     width: 400px;
     margin: 1%;
-    border-radius: 3px;
-    border: solid 1px var(--brand-main);
+    filter: drop-shadow(5px 5px 10px rgb(0, 0, 0, 20%));
+}
+
+.project-ex:hover {
+    filter: drop-shadow(5px 5px 10px rgb(0, 0, 0, 40%));
+}
+
+.project-ex a {
+    text-decoration: none;
+}
+
+.project-ex a:hover {
+    color: var(--brand-main);
+    text-decoration: none;
 }
 
 .project-pic {
     width: 100%;
 }
 
-.project-image {
-    width: 100%;
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project-info {
     width: 100%;
     padding: 10px;
+    background-color: var(--brand-secondary);
 }
 
 .project-tools {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
+    padding: 4px 12px 2px;
+    border-radius: 5px;
+    background-color: var(--brand-main);
+    text-decoration: none;
+    color: var( --brand-secondary);
     margin: 5px 0;
+    border: none;
+    display: inline-block;
 }
 
 .project-tools p {
@@ -389,6 +407,60 @@ q {
 .project-info h4 {
     font-size: 125%;
 }
+
+.project {
+    width: 100%;
+    padding: 100px;
+}
+
+.project-title,
+.project-description {
+    width: 100%;
+    text-align: center;
+}
+
+.project-description {
+    padding-bottom: 20px;
+}
+
+.project-images {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.project-image-inner {
+    max-width: 400px;
+    max-height: 400px;
+    position: relative;
+    margin: 3px;
+}
+
+.project-pic {
+    z-index: 1;
+}
+
+.overlay {
+    min-width: 400px;
+    min-height: 400px;
+    opacity: 0;
+    z-index: 2;
+    background-color: var(--brand-main);
+    position: absolute;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay:hover {
+    opacity: 90%;
+} 
+
+.overlay-title {
+    color: white;
+}
+
 /* Designs & Coding */
 
 .port-container {

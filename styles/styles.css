@@ -474,7 +474,7 @@ q {
 
 .overlay-title {
     color: white;
-    font-size: 150%;
+    font-size: 100%;
 }
 
 /* Designs & Coding */
@@ -834,6 +834,10 @@ footer img {
     @media (min-width: 767px) {
         .project {
             padding: 100px;
+        }
+
+        .overlay-title {
+            font-size: 150%;
         }
     }
 

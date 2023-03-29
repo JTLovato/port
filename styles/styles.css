@@ -424,7 +424,7 @@ q {
 
 .project {
     width: 100%;
-    padding: 100px;
+    padding: 70px 40px;
 }
 
 .project-title,
@@ -456,8 +456,8 @@ q {
 }
 
 .overlay {
-    min-width: 400px;
-    min-height: 400px;
+    min-width: 100%;
+    min-height: 100%;
     opacity: 0;
     z-index: 2;
     background-color: var(--brand-main);
@@ -831,4 +831,10 @@ footer img {
         width: 300px;
     }
     
+    @media (min-width: 767px) {
+        .project {
+            padding: 100px;
+        }
+    }
+
 }

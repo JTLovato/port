@@ -28,7 +28,7 @@ window.onload = function () {
         console.log("test");
       } else {
         this.contact_number.value = (Math.random() * 100000) | 0;
-        emailjs.sendForm("service_rlhl0xh", "template_3s0flsq", this).then(
+        emailjs.sendForm("service_3gw02ip", "template_wsebari", this).then(
           function () {
             console.log("SUCCESS!");
             contactInfo.style.fontSize = "2.5rem";

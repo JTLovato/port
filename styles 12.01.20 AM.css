@@ -376,6 +376,12 @@ body {
   justify-content: center;
 }
 
+.email-link {
+  color: #990606;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .about-section {
@@ -396,10 +402,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .about-text {
-    text-align: center;
   }
 
   .category-grid {

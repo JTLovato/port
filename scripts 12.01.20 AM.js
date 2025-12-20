@@ -18,7 +18,9 @@ const portfolioData = {
           </p>
           <p>Whether I’m crafting a team’s seasonal narrative or developing modern design systems, my goal is to deliver versatile, future-forward solutions that resonate with audiences and elevate brand presence across all platforms.</p>
         <p>I currently live in Arlington, Virginia, and am open to relocating to continue my passion for creating the best designs and growing as a professional.</p>
-          </div>
+        <a class="email-link" href="mailto:jtlovato@gmail.com">Shoot Me An Email</a>
+
+        </div>
       </div>
     `,
   },

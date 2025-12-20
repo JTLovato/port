@@ -1,0 +1,470 @@
+/* Reset and General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/bg.webp);
+  color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header and Logo */
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.angel-left,
+.angel-right {
+  width: 10%;
+}
+
+.angel-right {
+  transform: scaleX(-1);
+}
+
+.title {
+  text-align: left;
+}
+
+.header {
+  background-image: url(./images/bg.webp);
+  padding: 20px 0 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  text-align: center;
+}
+
+.logo {
+  width: 10%;
+}
+
+.sports-btn {
+  background-image: url("./images/sports_sign.webp");
+  width: 100%;
+}
+
+.ai-btn {
+  background-image: url("./images/AI_sign.webp");
+  width: 100%;
+}
+
+.logos-btn {
+  background-image: url("./images/logos_sign.webp");
+  width: 100%;
+}
+
+/* Main Content and Category Grid */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #ddd;
+}
+
+.category-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 75%;
+  gap: 30px;
+}
+
+.category-btn {
+  flex: 1;
+  padding: 30px 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  color: white;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  aspect-ratio: 1/1;
+}
+
+.category-btn:hover,
+.moi-angel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.subcategory-img:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+/* Footer */
+.footer {
+  padding: 20px 0px;
+  margin-top: 20px;
+  background-image: url(./images/bg.webp);
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* --- MODAL STYLES (Lightbox) --- */
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-image: url(./images/bg.webp);
+}
+
+/* The wrapper does not scroll; inner content does */
+.modal-content-wrapper {
+  max-width: 90%;
+  margin: 2vh auto;
+  background-image: url(./images/bg.webp);
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  position: relative;
+  animation: fadeIn 0.3s;
+  overflow: hidden;
+}
+
+/* Inner content scrolls, X stays pinned to wrapper */
+.modal-inner-content {
+  height: calc(100% - 5vh);
+  overflow-y: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-title {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #9a0606;
+}
+
+.modal-blurb {
+  font-size: 1em;
+  color: #1c1c1c;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 1000px;
+}
+
+/* Navigation View (Sports Subcategories) */
+.navigation-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 0;
+}
+
+.subcategory-btn {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  max-width: 20%;
+  flex: 1;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.subcategory-img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.navigation-view .subcategory-btn {
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Gallery View (Slideshow / Mobile stack) */
+.slideshow-container {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.modal-image {
+  max-width: 95%;
+  height: auto;
+  max-height: 50vh;
+  display: inline-block;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  margin: 25px;
+  background-color: #ffffff;
+}
+
+.modal-caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #c3c3c3;
+  padding: 0 0 10px 0;
+}
+
+/* Slideshow Navigation Buttons */
+.nav-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 18px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.3s ease;
+  user-select: none;
+  background-color: rgba(130, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.nav-btn:hover {
+  background-color: rgba(130, 0, 0, 0.8);
+}
+
+.prev-btn {
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.next-btn {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.back-btn-holder {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.back-btn {
+  background-color: transparent;
+  border: none;
+  width: 200px;
+}
+
+.back-btn-img {
+  width: 100%;
+}
+
+/* Utility class */
+.hidden {
+  display: none !important;
+}
+
+.img {
+  width: 25%;
+}
+
+/* About view */
+.about-view {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  gap: 30px;
+}
+
+.about-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.about-text {
+  max-width: 100%;
+  color: #3a3a3a;
+  text-align: left;
+}
+
+.about-btn {
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.moi-angel {
+  width: 30%;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.modal-title-holder {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.back-btn {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.back-btn:hover {
+  transform: translateY(5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.blurb-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .header {
+    margin-top: 30px;
+  }
+
+  .modal-title {
+    margin: 10px;
+    text-align: center;
+    color: #990606;
+  }
+
+  .modal-title-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .category-grid {
+    flex-direction: column;
+  }
+
+  .category-btn {
+    padding: 20px;
+    font-size: 1.2em;
+  }
+
+  .modal-content-wrapper {
+    margin: 0;
+    width: 95%;
+    margin: 0 2.5%;
+    padding: 10px;
+    padding-top: 30px;
+  }
+
+  .navigation-view {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navigation-view .subcategory-btn {
+    min-width: unset;
+  }
+
+  .subcategory-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .nav-btn {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .img {
+    width: 200px;
+  }
+
+  .moi-angel {
+    width: 80%;
+    border-radius: 12px;
+  }
+
+  .header {
+    padding: 20px 0;
+  }
+
+  .slideshow-container {
+    flex-wrap: wrap;
+  }
+
+  .modal-image {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .modal-caption {
+    font-size: 1em;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+}

@@ -4,152 +4,166 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John T. Lovato Portfolio</title>
+
+    <!-- SEO / Open Graph (Social Media) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aialtlab.org/" />
+    <meta
+      property="og:title"
+      content="John T. Lovato | Graphic Design Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Graphic designer specializing in impactful sports design and AI-driven visual storytelling."
+    />
+    <meta property="og:image" content="https://i.imgur.com/XeQEIrS.jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="John T. Lovato | Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Expert sports design and AI visual identity concepts."
+    />
+    <meta name="twitter:image" content="https://i.imgur.com/XeQEIrS.jpeg" />
+
+    <!-- Google Site Verification -->
+    <meta
+      name="google-site-verification"
+      content="xlxoKu33Pb3yaQari_mfBBBdk1M3UPoa01vNPX_1o3Q"
+    />
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/./favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Favicon & Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XG2GB638ET"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XG2GB638ET");
+    </script>
+
+    <!-- Schema.org / JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "John T. Lovato",
+        "jobTitle": "Graphic Designer",
+        "url": "https://aialtlab.org/",
+        "description": "Specializing in sports design and AI visual concepts."
+      }
+    </script>
   </head>
   <body>
-    <!-- Header & Logo -->
-    <header class="header">
-      <div class="container">
-        <img src="./images/angel.webp" class="angel-left" alt="Angel Left" />
-        <img src="./images/logo.webp" class="logo" alt="Logo" />
-        <img src="./images/angel.webp" class="angel-right" alt="Angel Right" />
+    <!-- Header / Navigation Section -->
+    <header class="portfolio-header">
+      <div class="logo-container">
+        <h1>John T. Lovato</h1>
+        <p>Graphic Design & Visual Strategy</p>
       </div>
+      <nav class="main-nav">
+        <button data-category="About">About</button>
+        <button data-category="Logos">Logos</button>
+        <button data-category="AI">AI Concepts</button>
+        <button data-category="Sports">Sports</button>
+      </nav>
     </header>
 
-    <!-- Main Navigation Section -->
-    <main class="main-content container">
+    <!-- Main Portfolio Grid / Landing -->
+    <main class="portfolio-container">
       <div class="category-grid">
-        <button class="category-btn sports-btn" data-category="Sports"></button>
-        <button class="category-btn ai-btn" data-category="AI"></button>
-        <button class="category-btn logos-btn" data-category="Logos"></button>
+        <!-- AI Category -->
+        <div class="category-card" data-category="AI">
+          <img
+            src="images/ai-preview.webp"
+            alt="AI Concepts"
+            class="subcategory-img"
+            data-desktop-src="images/ai-preview.webp"
+            data-mobile-src="images/ai-mobile-preview.webp"
+          />
+          <div class="card-overlay">
+            <h3>AI Concepts</h3>
+          </div>
+        </div>
+        <!-- Logo Category -->
+        <div class="category-card" data-category="Logos">
+          <img
+            src="images/logo-preview.webp"
+            alt="Logo Design"
+            class="subcategory-img"
+            data-desktop-src="images/logo-preview.webp"
+            data-mobile-src="images/logo-mobile-preview.webp"
+          />
+          <div class="card-overlay">
+            <h3>Logo Design</h3>
+          </div>
+        </div>
+        <!-- Sports Category -->
+        <div class="category-card" data-category="Sports">
+          <img
+            src="images/sports-preview.webp"
+            alt="Sports Design"
+            class="subcategory-img"
+            data-desktop-src="images/sports-preview.webp"
+            data-mobile-src="images/sports-mobile-preview.webp"
+          />
+          <div class="card-overlay">
+            <h3>Sports Portfolio</h3>
+          </div>
+        </div>
       </div>
-
-      <button class="about-btn" data-category="About">
-        <img
-          class="moi-angel"
-          src="./images/aboutangel.webp"
-          alt="About Section"
-        />
-      </button>
     </main>
 
-    <!-- MODAL / LIGHTBOX Structure -->
-    <div id="modal" class="modal-overlay">
-      <div class="modal-content-wrapper">
-        <!-- Scrollable inner content; X stays fixed in wrapper -->
-        <div id="modal-content" class="modal-inner-content">
-          <div class="modal-title-holder">
-            <div class="back-btn-holder">
-              <!-- Back button (for Sports sub-galleries) -->
-              <button id="back-to-sports" class="back-btn hidden">
-                <img src="./images/back.webp" class="back-btn-img" alt="Back" />
-              </button>
-            </div>
+    <!-- Unified Modal for Galleries & Content -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <!-- Close Controls -->
+        <div class="modal-controls">
+          <button id="back-to-sports" class="hidden">← Back to Sports</button>
+          <button id="close-with-back" class="close-btn">×</button>
+        </div>
 
-            <h2 id="modal-title" class="modal-title"></h2>
+        <h2 id="modal-title"></h2>
+        <p id="modal-blurb"></p>
 
-            <div class="back-btn-holder">
-              <!-- Close button image (paired with back button) -->
-              <button id="close-with-back" class="back-btn hidden">
-                <img
-                  src="./images/close.webp"
-                  class="back-btn-img"
-                  alt="Close"
-                />
-              </button>
-            </div>
+        <!-- Dynamic Views -->
+        <div id="about-view" class="hidden"></div>
+
+        <div id="navigation-view" class="hidden">
+          <div class="sports-subcategories">
+            <button data-category="Avalanche">Colorado Avalanche</button>
+            <button data-category="Islanders">NY Islanders</button>
+            <button data-category="General">General Sports</button>
           </div>
-          <div class="blurb-holder">
-            <p id="modal-blurb" class="modal-blurb"></p>
-          </div>
+        </div>
 
-          <!-- 1. NAVIGATION VIEW (For Sports) -->
-          <div id="navigation-view" class="navigation-view hidden">
-            <button
-              class="subcategory-btn"
-              data-category="Avalanche"
-              aria-label="Avalanche"
-            >
-              <img
-                src="./images/avs_link.webp"
-                data-desktop-src="./images/avs_link.webp"
-                data-mobile-src="./images/avs_link_mobile.webp"
-                alt="Avalanche"
-                class="subcategory-img"
-              />
-            </button>
-
-            <button
-              class="subcategory-btn"
-              data-category="General"
-              aria-label="General sports"
-            >
-              <img
-                src="./images/misc_link.webp"
-                data-desktop-src="./images/misc_link.webp"
-                data-mobile-src="./images/misc_link_mobile.webp"
-                alt="General Sports"
-                class="subcategory-img"
-              />
-            </button>
-
-            <button
-              class="subcategory-btn"
-              data-category="Islanders"
-              aria-label="Islanders"
-            >
-              <img
-                src="./images/isles_link.webp"
-                data-desktop-src="./images/isles_link.webp"
-                data-mobile-src="./images/isles_link_mobile.webp"
-                alt="Islanders"
-                class="subcategory-img"
-              />
-            </button>
-          </div>
-
-          <!-- Back button for Sports sub-galleries -->
-
-          <!-- 2. GALLERY VIEW (For AI, Logos, Sports teams) -->
-          <div id="gallery-view" class="gallery-view hidden">
-            <div class="slideshow-container">
-              <img
-                id="modal-image"
-                class="modal-image"
-                src=""
-                alt="Portfolio Image"
-              />
-              <a class="nav-btn prev-btn">❮</a>
-              <a class="nav-btn next-btn">❯</a>
-            </div>
+        <div id="gallery-view" class="hidden">
+          <div class="slideshow-container">
+            <img id="modal-image" src="" alt="" />
             <div id="modal-caption" class="modal-caption"></div>
           </div>
-
-          <!-- 3. ABOUT VIEW -->
-          <div id="about-view" class="about-view hidden"></div>
+          <button class="prev-btn">❮</button>
+          <button class="next-btn">❯</button>
         </div>
       </div>
     </div>
 
-    <!-- Link External JavaScript -->
+    <!-- Scripts -->
     <script src="scripts.js"></script>
   </body>
 </html>

@@ -3,7 +3,7 @@
 const portfolioData = {
   About: {
     type: "about",
-    title: "About John T. Lovato",
+    title: "About John",
 
     content: `
       <div class="about-section">

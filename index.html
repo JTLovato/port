@@ -4,6 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John T. Lovato Portfolio</title>
+
+    <!-- Meta Description for SEO -->
+    <meta
+      name="description"
+      content="Explore the portfolio of John T. Lovato, a graphic designer specializing in high-impact sports design, visual identity, and innovative AI-driven creative concepts."
+    />
+
+    <!-- SEO / Open Graph (Social Media) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aialtlab.org/" />
+    <meta
+      property="og:title"
+      content="John T. Lovato | Graphic Design Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Graphic designer specializing in impactful sports design and AI-driven visual storytelling."
+    />
+    <meta property="og:image" content="https://i.imgur.com/XeQEIrS.jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="John T. Lovato | Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Expert sports design and AI visual identity concepts."
+    />
+    <meta name="twitter:image" content="https://i.imgur.com/XeQEIrS.jpeg" />
+
+    <!-- Google Site Verification -->
+    <meta
+      name="google-site-verification"
+      content="xlxoKu33Pb3yaQari_mfBBBdk1M3UPoa01vNPX_1o3Q"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="apple-touch-icon"
@@ -20,47 +56,91 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/./favicon_io/favicon-16x16.png"
+      href="./favicon_io/favicon-16x16.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
+    <!-- Fixed manifest path: assuming it's in the favicon_io folder with the other assets -->
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
   </head>
   <body>
     <!-- Header & Logo -->
     <header class="header">
       <div class="container">
-        <img src="./images/angel.webp" class="angel-left" alt="Angel Left" />
-        <img src="./images/logo.webp" class="logo" alt="Logo" />
-        <img src="./images/angel.webp" class="angel-right" alt="Angel Right" />
+        <img
+          src="./images/angel.webp"
+          class="angel-left"
+          alt="Decorative Angel Left"
+        />
+        <img src="./images/logo.webp" class="logo" alt="John T. Lovato Logo" />
+        <img
+          src="./images/angel.webp"
+          class="angel-right"
+          alt="Decorative Angel Right"
+        />
       </div>
     </header>
 
     <!-- Main Navigation Section -->
     <main class="main-content container">
       <div class="category-grid">
-        <button class="category-btn sports-btn" data-category="Sports"></button>
-        <button class="category-btn ai-btn" data-category="AI"></button>
-        <button class="category-btn logos-btn" data-category="Logos"></button>
+        <!-- FIXED: Removed trailing space from "Sports" data-category to match JS object -->
+        <a
+          href="#sports"
+          class="category-btn sports-btn"
+          data-category="Sports"
+          aria-label="Open Sports Concepts Gallery"
+        ></a>
+        <a
+          href="#ai"
+          class="category-btn ai-btn"
+          data-category="AI"
+          aria-label="Open AI Concepts Gallery"
+        ></a>
+        <a
+          href="#logos"
+          class="category-btn logos-btn"
+          data-category="Logos"
+          aria-label="Open Logos Concepts Gallery"
+        ></a>
       </div>
 
-      <button class="about-btn" data-category="About">
+      <a
+        href="#about"
+        class="about-btn"
+        data-category="About"
+        aria-label="Learn More About John"
+      >
         <img
           class="moi-angel"
           src="./images/aboutangel.webp"
-          alt="About Section"
+          alt="John T. Lovato About Section"
         />
-      </button>
+      </a>
     </main>
 
     <!-- MODAL / LIGHTBOX Structure -->
-    <div id="modal" class="modal-overlay">
+    <div
+      id="modal"
+      class="modal-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
       <div class="modal-content-wrapper">
         <!-- Scrollable inner content; X stays fixed in wrapper -->
         <div id="modal-content" class="modal-inner-content">
           <div class="modal-title-holder">
             <div class="back-btn-holder">
               <!-- Back button (for Sports sub-galleries) -->
-              <button id="back-to-sports" class="back-btn hidden">
-                <img src="./images/back.webp" class="back-btn-img" alt="Back" />
+              <button
+                id="back-to-sports"
+                class="back-btn hidden"
+                aria-label="Back To Sports Categories"
+              >
+                <img
+                  src="./images/back.webp"
+                  class="back-btn-img"
+                  alt="Back Icon"
+                />
               </button>
             </div>
 
@@ -68,11 +148,15 @@
 
             <div class="back-btn-holder">
               <!-- Close button image (paired with back button) -->
-              <button id="close-with-back" class="back-btn hidden">
+              <button
+                id="close-with-back"
+                class="back-btn hidden"
+                aria-label="Close Portfolio Section"
+              >
                 <img
                   src="./images/close.webp"
                   class="back-btn-img"
-                  alt="Close"
+                  alt="Close Icon"
                 />
               </button>
             </div>
@@ -82,51 +166,52 @@
           </div>
 
           <!-- 1. NAVIGATION VIEW (For Sports) -->
-          <div id="navigation-view" class="navigation-view hidden">
-            <button
+          <nav id="navigation-view" class="navigation-view hidden">
+            <a
+              href="#avalanche"
               class="subcategory-btn"
               data-category="Avalanche"
-              aria-label="Avalanche"
+              aria-label="View Avalanche Designs"
             >
               <img
                 src="./images/avs_link.webp"
                 data-desktop-src="./images/avs_link.webp"
                 data-mobile-src="./images/avs_link_mobile.webp"
-                alt="Avalanche"
+                alt="Colorado Avalanche Portfolio"
                 class="subcategory-img"
               />
-            </button>
+            </a>
 
-            <button
+            <a
+              href="#general"
               class="subcategory-btn"
               data-category="General"
-              aria-label="General sports"
+              aria-label="View General Sports Designs"
             >
               <img
                 src="./images/misc_link.webp"
                 data-desktop-src="./images/misc_link.webp"
                 data-mobile-src="./images/misc_link_mobile.webp"
-                alt="General Sports"
+                alt="General Sports Portfolio"
                 class="subcategory-img"
               />
-            </button>
+            </a>
 
-            <button
+            <a
+              href="#islanders"
               class="subcategory-btn"
               data-category="Islanders"
-              aria-label="Islanders"
+              aria-label="View Islanders Designs"
             >
               <img
                 src="./images/isles_link.webp"
                 data-desktop-src="./images/isles_link.webp"
                 data-mobile-src="./images/isles_link_mobile.webp"
-                alt="Islanders"
+                alt="New York Islanders Portfolio"
                 class="subcategory-img"
               />
-            </button>
-          </div>
-
-          <!-- Back button for Sports sub-galleries -->
+            </a>
+          </nav>
 
           <!-- 2. GALLERY VIEW (For AI, Logos, Sports teams) -->
           <div id="gallery-view" class="gallery-view hidden">
@@ -135,10 +220,14 @@
                 id="modal-image"
                 class="modal-image"
                 src=""
-                alt="Portfolio Image"
+                alt="Portfolio Gallery Content"
               />
-              <a class="nav-btn prev-btn">❮</a>
-              <a class="nav-btn next-btn">❯</a>
+              <button class="nav-btn prev-btn" aria-label="Previous image">
+                ❮
+              </button>
+              <button class="nav-btn next-btn" aria-label="Next image">
+                ❯
+              </button>
             </div>
             <div id="modal-caption" class="modal-caption"></div>
           </div>

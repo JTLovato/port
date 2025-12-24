@@ -168,12 +168,28 @@ body {
 }
 
 /* START OF THE ONLY CHANGE: Centering fix */
+/* Update this specific block in your CSS */
 .modal-title-holder {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   justify-content: center;
   width: 100%;
+
+  /* Sticky Logic */
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Keeps it above images */
+  background-image: url(./images/bg.webp); /* Matches modal background so text doesn't bleed through */
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Optional: adds a slight separation when scrolling */
+}
+
+/* Ensure the inner content doesn't hide the sticky header */
+.modal-inner-content {
+  height: calc(100% - 5vh);
+  overflow-y: auto;
+  position: relative;
 }
 
 .back-btn-holder {
@@ -393,6 +409,30 @@ body {
   color: #990606;
   font-size: 1.2em;
   font-weight: bold;
+}
+
+/* Specific styling for the close button to match your Back button */
+#close-with-back {
+  background-color: transparent;
+  border: none;
+  width: 200px; /* Matches your .back-btn width */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+#close-with-back:hover {
+  transform: translateY(5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Ensures the close button holder is visible on mobile if hidden by previous media queries */
+@media (max-width: 768px) {
+  #close-with-back {
+    width: 100px;
+  }
 }
 
 /* Media Queries for Responsiveness */

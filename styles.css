@@ -21,7 +21,7 @@ body {
 
 .angel-left,
 .angel-right {
-  width: 10%;
+  width: 8%;
 }
 
 .angel-right {
@@ -42,7 +42,7 @@ body {
 }
 
 .logo {
-  width: 10%;
+  width: 8%;
 }
 
 .sports-btn {
@@ -235,10 +235,6 @@ body {
   flex: 1;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-}
-
-.logo {
-  width: 20%;
 }
 
 .subcategory-img {
@@ -516,6 +512,10 @@ body {
     max-width: 100%;
     margin: 0;
     padding: 0;
+  }
+
+  .logo {
+    width: 20%;
   }
 
   .modal-caption {

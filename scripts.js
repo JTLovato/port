@@ -397,7 +397,6 @@ document.addEventListener("DOMContentLoaded", () => {
       aboutView.innerHTML = data.content;
       aboutView.classList.remove("hidden");
 
-      // FIX: Ensure close button shows up for About section
       if (backToSportsBtn) backToSportsBtn.classList.add("hidden");
       if (closeWithBackBtn) closeWithBackBtn.classList.remove("hidden");
 

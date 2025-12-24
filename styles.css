@@ -169,7 +169,6 @@ body {
 }
 
 /* START OF THE ONLY CHANGE: Centering fix */
-/* Update this specific block in your CSS */
 .modal-title-holder {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -410,11 +409,10 @@ body {
   font-weight: bold;
 }
 
-/* Specific styling for the close button to match your Back button */
 #close-with-back {
   background-color: transparent;
   border: none;
-  width: 150px; /* Matches your .back-btn width */
+  width: 150px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   padding: 5px 10px;
   border-radius: 8px;

@@ -200,10 +200,12 @@ body {
 .modal-title {
   grid-column: 2;
   font-size: 2.2em;
-  font-weight: 700;
   margin: 0 10px;
   text-align: center;
   color: #9a0606;
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
 }
 /* END OF THE ONLY CHANGE */
 
@@ -317,7 +319,7 @@ body {
 .back-btn {
   background-color: transparent;
   border: none;
-  width: 200px;
+  width: 150px;
 }
 
 .back-btn-img {
@@ -411,7 +413,7 @@ body {
 #close-with-back {
   background-color: transparent;
   border: none;
-  width: 200px; /* Matches your .back-btn width */
+  width: 150px; /* Matches your .back-btn width */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   padding: 5px 10px;
   border-radius: 8px;
@@ -422,6 +424,12 @@ body {
 #close-with-back:hover {
   transform: translateY(5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Ensures the close button holder is visible on mobile if hidden by previous media queries */

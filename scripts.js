@@ -1,10 +1,8 @@
 // --- DATA STRUCTURE ---
-// Defines the nested structure and content for the portfolio.
 const portfolioData = {
   About: {
     type: "about",
-    title: "About John",
-
+    title: "About John.",
     content: `
       <div class="about-section">
         <img src="./images/moi.webp" alt="Profile image" class="about-image" />
@@ -19,7 +17,6 @@ const portfolioData = {
           <p>Whether I’m crafting a team’s seasonal narrative or developing modern design systems, my goal is to deliver versatile, future-forward solutions that resonate with audiences and elevate brand presence across all platforms.</p>
         <p>I currently live in Arlington, Virginia, and am open to relocating to continue my passion for creating the best designs and growing as a professional.</p>
         <a class="email-link" href="mailto:jtlovato@gmail.com">Shoot Me An Email</a>
-
         </div>
       </div>
     `,
@@ -363,7 +360,7 @@ document.addEventListener("DOMContentLoaded", () => {
     galleryView.classList.add("hidden");
     aboutView.classList.add("hidden");
     modalTitle.textContent = data.title;
-    modalBlurb.textContent = data.blurb;
+    modalBlurb.textContent = data.blurb || "";
 
     const isMobile = window.innerWidth <= 768;
 
@@ -383,6 +380,8 @@ document.addEventListener("DOMContentLoaded", () => {
         isSportsSub
           ? backToSportsBtn.classList.remove("hidden")
           : backToSportsBtn.classList.add("hidden");
+
+      // Explicitly show the Close button for galleries
       if (closeWithBackBtn) closeWithBackBtn.classList.remove("hidden");
 
       if (isMobile) {
@@ -397,6 +396,11 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (data.type === "about") {
       aboutView.innerHTML = data.content;
       aboutView.classList.remove("hidden");
+
+      // FIX: Ensure close button shows up for About section
+      if (backToSportsBtn) backToSportsBtn.classList.add("hidden");
+      if (closeWithBackBtn) closeWithBackBtn.classList.remove("hidden");
+
       prevBtn.style.display = "none";
       nextBtn.style.display = "none";
     }

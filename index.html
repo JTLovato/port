@@ -58,7 +58,6 @@
       sizes="16x16"
       href="./favicon_io/favicon-16x16.png"
     />
-    <!-- Fixed manifest path: assuming it's in the favicon_io folder with the other assets -->
     <link rel="manifest" href="./favicon_io/site.webmanifest" />
   </head>
   <body>
@@ -82,7 +81,6 @@
     <!-- Main Navigation Section -->
     <main class="main-content container">
       <div class="category-grid">
-        <!-- FIXED: Removed trailing space from "Sports" data-category to match JS object -->
         <a
           href="#sports"
           class="category-btn sports-btn"
@@ -126,7 +124,7 @@
       aria-labelledby="modal-title"
     >
       <div class="modal-content-wrapper">
-        <!-- Scrollable inner content; X stays fixed in wrapper -->
+        <!-- Scrollable inner content; Navigation elements stay fixed in the holder -->
         <div id="modal-content" class="modal-inner-content">
           <div class="modal-title-holder">
             <div class="back-btn-holder">
@@ -147,7 +145,7 @@
             <h2 id="modal-title" class="modal-title"></h2>
 
             <div class="back-btn-holder">
-              <!-- Close button image (paired with back button) -->
+              <!-- Close button image - Ensure this is toggled in JS for 'About' type -->
               <button
                 id="close-with-back"
                 class="back-btn hidden"

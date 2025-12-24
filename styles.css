@@ -401,10 +401,6 @@ body {
     flex-direction: column;
   }
 
-  .header {
-    margin-top: 50px;
-  }
-
   .angel-left,
   .angel-right {
     width: 20%;

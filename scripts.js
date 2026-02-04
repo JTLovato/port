@@ -138,50 +138,70 @@ const portfolioData = {
   Avalanche: {
     type: "gallery",
     title: "Colorado Avalanche Season Campaign",
-    blurb:
-      "Season campaign mockup for the NHL's Colorado Avalanche. The primary challenge was to translate the high-velocity intensity of Avalanche hockey into a static identity that felt both prestigious and accessible to the faithful fanbase. I utilized unique perspectives, such as overhead ice views, to put fans in the middle of the action. High-contrast graphics maintain engagement while ensuring key information is easily digestible.",
+    blurb: "",
+    // "Season campaign mockup for the NHL's Colorado Avalanche. The primary challenge was to translate the high-velocity intensity of Avalanche hockey into a static identity that felt both prestigious and accessible to the faithful fanbase. I utilized unique perspectives, such as overhead ice views, to put fans in the middle of the action. High-contrast graphics maintain engagement while ensuring key information is easily digestible.",
     images: [
-      { src: "./images/sports/avs_gameday.webp", caption: "Gameday Graphic" },
-      { src: "./images/sports/starting_lineup.webp", caption: "Roster Reveal" },
+      {
+        src: "./images/sports/explainer_avs.webp",
+        caption: "\u00A0\u00A0\u00A0",
+      },
+      {
+        src: "./images/sports/avs_gameday.webp",
+        caption: "Gameday Graphic\u00A0\u00A0\u00A0[1 / 14]",
+      },
+      {
+        src: "./images/sports/starting_lineup.webp",
+        caption: "Roster Reveal\u00A0\u00A0\u00A0[2 / 14]",
+      },
+      {
+        src: "./images/sports/avs_used_screen.webp",
+        caption: "Jumbotron Player Introductions.\u00A0\u00A0\u00A0[3 / 14]",
+      },
       {
         src: "./images/sports/starting_in_net.webp",
-        caption: "Starting In Net",
+        caption: "Starting In Net.\u00A0\u00A0\u00A0[4 / 14]",
       },
       {
         src: "./images/sports/afterperiod.webp",
-        caption: "Intermission Updates (Periods 1, 2, 3)",
+        caption:
+          "Intermission Updates (Periods 1, 2, 3).\u00A0\u00A0\u00A0[5 / 14]",
       },
       {
         src: "./images/sports/avs_win.webp",
-        caption: "Final Score: Avalanche Win",
+        caption: "Final Score: Avalanche Win.\u00A0\u00A0\u00A0[6 / 14]",
       },
       {
         src: "./images/sports/blackwood_shutout.webp",
-        caption: "Goaltender Shutout Graphic",
+        caption: "Goaltender Shutout Graphic.\u00A0\u00A0\u00A0[7 / 14]",
       },
       {
         src: "./images/sports/clinched.webp",
-        caption: "Playoff Clinch Graphic",
+        caption: "Playoff Clinch Graphic.\u00A0\u00A0\u00A0[8 / 14]",
       },
       {
         src: "./images/sports/gabes_back.webp",
-        caption: "Captain Gabriel Landeskog Return Graphic",
+        caption:
+          "Captain Gabriel Landeskog Return Graphic.\u00A0\u00A0\u00A0[9 / 14]",
+      },
+      {
+        src: "./images/sports/avs_used.webp",
+        caption: "Social Media Examples.\u00A0\u00A0\u00A0[10 / 14]",
       },
       {
         src: "./images/sports/schedule.webp",
-        caption: "Monthly Schedule Template",
+        caption: "Monthly Schedule Template.\u00A0\u00A0\u00A0[11 / 14]",
       },
       {
         src: "./images/sports/trade_graphic.webp",
-        caption: "Trade Announcement Example",
+        caption: "Trade Announcement Example.\u00A0\u00A0\u00A0[12 / 14]",
       },
       {
         src: "./images/sports/thank_you.webp",
-        caption: "Player Appreciation Graphic",
+        caption: "Player Appreciation Graphic.\u00A0\u00A0\u00A0[13 / 14]",
       },
       {
         src: "./images/sports/1st_star.webp",
-        caption: "NHL Star of the Month Graphic",
+        caption: "NHL Star of the Month Graphic.\u00A0\u00A0\u00A0[14 / 14]",
       },
     ],
   },
@@ -255,7 +275,7 @@ const portfolioData = {
       },
       {
         src: "./images/sports/edm_background.webp",
-        caption: "Edmonton Oilers Mobile Wallpaper",
+        caption: "Edmonton Oilers Wallpaper",
       },
       {
         src: "./images/sports/cards.webp",

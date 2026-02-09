@@ -17,6 +17,17 @@ const portfolioData = {
           <p>Whether I’m crafting a team’s seasonal narrative or developing modern design systems, my goal is to deliver versatile, future-forward solutions that resonate with audiences and elevate brand presence across all platforms.</p>
         <p>I currently live in Arlington, Virginia, and am open to relocating to continue my passion for creating the best designs and growing as a professional.</p>
         <a class="email-link" href="mailto:jtlovato@gmail.com">Shoot Me An Email</a>
+        <div class="powerpoints">
+        <h2>Sample Powerpoints</h2>
+        <div class="each_pp">
+        <h3>Iowa Wild Ticket Increase Plan</h3>
+          <iframe src="https://1drv.ms/p/c/42d41b454745dd3b/IQTRdbZOVwmURqX8vfup0pT-Aayqmk3AZcXgzTIEgPjp0fM?em=2&amp;wdAr=1.7777777777777777&amp;wdEaaCheck=1" height="300px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+       </div>
+       <div class="each_pp">
+       <h3>State Of Utah Ethical AI Usage</h3>
+       <iframe src="https://1drv.ms/p/c/42d41b454745dd3b/IQSlMElyGYiTTpIPkdnaE63jAcLt2wQvkIXSe1Zd0rxu4-A?em=2&amp;wdAr=1.7777777777777777" height="300px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+       </div>
+          </div>
         </div>
       </div>
     `,
@@ -394,7 +405,7 @@ document.addEventListener("DOMContentLoaded", () => {
       currentProjectImages = data.images;
       galleryView.classList.remove("hidden");
       const isSportsSub = ["Avalanche", "Islanders", "General"].includes(
-        categoryKey
+        categoryKey,
       );
       if (backToSportsBtn)
         isSportsSub
@@ -428,20 +439,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll("[data-category]").forEach((btn) => {
     btn.addEventListener("click", (e) =>
-      openModal(e.currentTarget.getAttribute("data-category"))
+      openModal(e.currentTarget.getAttribute("data-category")),
     );
   });
 
   backToSportsBtn?.addEventListener("click", () => openModal("Sports"));
   closeWithBackBtn?.addEventListener(
     "click",
-    () => (modal.style.display = "none")
+    () => (modal.style.display = "none"),
   );
   prevBtn.addEventListener("click", () =>
-    updateSlideshow(currentImageIndex - 1)
+    updateSlideshow(currentImageIndex - 1),
   );
   nextBtn.addEventListener("click", () =>
-    updateSlideshow(currentImageIndex + 1)
+    updateSlideshow(currentImageIndex + 1),
   );
   modal.addEventListener("click", (e) => {
     if (e.target === modal) modal.style.display = "none";

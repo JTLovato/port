@@ -95,7 +95,10 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    background-color 0.3s;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   color: white;
   background-position: center;
@@ -213,6 +216,19 @@ body {
   font-weight: 1000;
   font-style: normal;
 }
+.powerpoints {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.powerpoints h2 {
+  width: 100%;
+}
+
+.each_pp {
+  width: 100%;
+}
 /* END OF THE ONLY CHANGE */
 
 .modal-blurb {
@@ -242,19 +258,27 @@ body {
   max-width: 20%;
   flex: 1;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    background-color 0.3s;
 }
 
 .subcategory-img {
   display: block;
   width: 100%;
   border-radius: 8px;
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    background-color 0.3s;
 }
 
 .navigation-view .subcategory-btn {
   cursor: pointer;
-  transition: background-color 0.2s, border-color 0.2s;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
 }
 
 /* Gallery View (Slideshow / Mobile stack) */
@@ -387,7 +411,10 @@ body {
   width: 30%;
   border-radius: 12px;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    background-color 0.3s;
 }
 
 .back-btn {
@@ -395,7 +422,10 @@ body {
   padding: 5px 10px;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    background-color 0.3s;
 }
 
 .back-btn:hover {
@@ -423,7 +453,10 @@ body {
   padding: 5px 10px;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    background-color 0.3s;
 }
 
 #close-with-back:hover {

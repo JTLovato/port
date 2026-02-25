@@ -332,6 +332,37 @@ body {
   text-decoration: none;
 }
 
+/* The Spinner Container */
+.pp-loader {
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-left-color: #fff; /* Match your white/ice theme */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  z-index: 1;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Ensure the container can hold the absolute spinner */
+.slideshow-container {
+  position: relative;
+  min-height: 300px;
+}
+
 .nav-btn:hover {
   background-color: rgba(130, 0, 0, 0.8);
 }

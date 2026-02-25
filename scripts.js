@@ -17,17 +17,6 @@ const portfolioData = {
           <p>Whether I’m crafting a team’s seasonal narrative or developing modern design systems, my goal is to deliver versatile, future-forward solutions that resonate with audiences and elevate brand presence across all platforms.</p>
         <p>I currently live in Arlington, Virginia, and am open to relocating to continue my passion for creating the best designs and growing as a professional.</p>
         <a class="email-link" href="mailto:jtlovato@gmail.com">Shoot Me An Email</a>
-        <div class="powerpoints">
-        <h2>Sample Powerpoints</h2>
-        <div class="each_pp">
-        <h3>Iowa Wild Ticket Increase Plan</h3>
-          <iframe src="https://1drv.ms/p/c/42d41b454745dd3b/IQTRdbZOVwmURqX8vfup0pT-Aayqmk3AZcXgzTIEgPjp0fM?em=2&amp;wdAr=1.7777777777777777&amp;wdEaaCheck=1" height="300px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-       </div>
-       <div class="each_pp">
-       <h3>State Of Utah Ethical AI Usage</h3>
-       <iframe src="https://1drv.ms/p/c/42d41b454745dd3b/IQSlMElyGYiTTpIPkdnaE63jAcLt2wQvkIXSe1Zd0rxu4-A?em=2&amp;wdAr=1.7777777777777777" height="300px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-       </div>
-          </div>
         </div>
       </div>
     `,
@@ -143,6 +132,18 @@ const portfolioData = {
         caption:
           "Rainbow Cake Co: A creative bakery started by an LGBTQ+ couple, focusing on bespoke, imaginative cakes.",
       },
+      {
+        format: "pp",
+        url: "https://1drv.ms/p/c/42d41b454745dd3b/IQTRdbZOVwmURqX8vfup0pT-Aayqmk3AZcXgzTIEgPjp0fM?em=2&wdAr=1.7777777777777777&wdEaaCheck=1",
+        caption:
+          "Strategic Pitch: Iowa Wild Ticket Increase Plan Deck (Please Be Patient As Powerpoints Can Take Time To Load)",
+      },
+      {
+        format: "pp",
+        url: "https://1drv.ms/p/c/42d41b454745dd3b/IQSlMElyGYiTTpIPkdnaE63jAcLt2wQvkIXSe1Zd0rxu4-A?em=2&wdAr=1.7777777777777777",
+        caption:
+          "State Of Utah Ethical AI Usage: Policy Branding and Guidelines (Please Be Patient As Powerpoints Can Take Time To Load)",
+      },
     ],
   },
 
@@ -225,39 +226,43 @@ const portfolioData = {
     images: [
       {
         src: "./images/sports/season.webp",
-        caption: "Slogan Launch: uNYIelding",
+        caption: "Slogan Launch: uNYIelding\u00A0\u00A0\u00A0[1 / 9]",
       },
       {
         src: "./images/sports/milestone.webp",
-        caption: "Jordan Eberle: 300 Career Goals Celebration",
+        caption:
+          "Jordan Eberle: 300 Career Goals Celebration\u00A0\u00A0\u00A0[2 / 9]",
       },
       {
         src: "./images/sports/gamedays.webp",
-        caption: "Gameday graphics for Home/Away jersey variations.",
+        caption:
+          "Gameday Graphics for Home/Away Jersey Variations\u00A0\u00A0\u00A0[3 / 9]",
       },
       {
         src: "./images/sports/isles_schedule.webp",
-        caption: "Full season schedule with jersey kit details.",
+        caption:
+          "Full Season Schedule with Jersey Kit Details\u00A0\u00A0\u00A0[4 / 9]",
       },
       {
         src: "./images/sports/player_profile.webp",
-        caption: "Ilya Sorokin Player Profile",
+        caption: "Ilya Sorokin Player Profile\u00A0\u00A0\u00A0[5 / 9]",
       },
       {
         src: "./images/sports/retro.webp",
-        caption: "Retro 'Fisherman' Third Jersey Reveal",
+        caption:
+          "Retro 'Fisherman' Third Jersey Reveal\u00A0\u00A0\u00A0[6 / 9]",
       },
       {
         src: "./images/sports/trade.webp",
-        caption: "Trade Announcement Graphic",
+        caption: "Trade Announcement Graphic\u00A0\u00A0\u00A0[7 / 9]",
       },
       {
         src: "./images/sports/thank_you_graphic.webp",
-        caption: "Player Farewell/Retirement Graphic",
+        caption: "Player Farewell/Retirement Graphic\u00A0\u00A0\u00A0[8 / 9]",
       },
       {
         src: "./images/sports/isles_starting_lineup.webp",
-        caption: "Dynamic Starting Lineup Template",
+        caption: "Dynamic Starting Lineup Template\u00A0\u00A0\u00A0[9 / 9]",
       },
     ],
   },
@@ -270,55 +275,65 @@ const portfolioData = {
     images: [
       {
         src: "./images/sports/caitlin_clark_design.webp",
-        caption: "Caitlin Clark: Rookie of the Year Accomplishments",
+        caption:
+          "Caitlin Clark: Rookie of the Year Accomplishments\u00A0\u00A0\u00A0[1 / 13]",
       },
       {
         src: "./images/sports/montreal_gameday_graphic.webp",
-        caption: "Montreal Canadiens Gameday Graphic",
+        caption: "Montreal Canadiens Gameday Graphic\u00A0\u00A0\u00A0[2 / 13]",
       },
       {
         src: "./images/sports/quick.webp",
-        caption: "Jonathan Quick Celebration Graphic",
+        caption: "Jonathan Quick Celebration Graphic\u00A0\u00A0\u00A0[3 / 13]",
       },
       {
         src: "./images/sports/playoffs.jpg",
-        caption: "Playoff Graphic for The Offensive Zone Podcast",
+        caption:
+          "Playoff Graphic for The Offensive Zone Podcast\u00A0\u00A0\u00A0[4 / 13]",
       },
       {
         src: "./images/sports/edm_background.webp",
-        caption: "Edmonton Oilers Wallpaper",
+        caption: "Edmonton Oilers Wallpaper\u00A0\u00A0\u00A0[5 / 13]",
       },
       {
         src: "./images/sports/cards.webp",
-        caption: "PWHL Autographed Trading Card Series",
+        caption:
+          "PWHL Autographed Trading Card Series\u00A0\u00A0\u00A0[6 / 13]",
       },
       {
         src: "./images/sports/garcia.webp",
-        caption: "Adolis Garcia: Bat Flip Celebration",
+        caption:
+          "Adolis Garcia: Bat Flip Celebration\u00A0\u00A0\u00A0[7 / 13]",
       },
       {
         src: "./images/sports/breaking.webp",
-        caption: "Breaking News Template for The Offensive Zone Podcast",
+        caption:
+          "Breaking News Template for The Offensive Zone Podcast\u00A0\u00A0\u00A0[8 / 13]",
       },
       {
         src: "./images/sports/laine_milestone.webp",
-        caption: "Patrik Laine: 100 Goals Celebration",
+        caption:
+          "Patrik Laine: 100 Goals Celebration\u00A0\u00A0\u00A0[9 / 13]",
       },
       {
         src: "./images/sports/pwhl_gameday.webp",
-        caption: "PWHL Gameday: NY Sirens at Ottawa Charge",
+        caption:
+          "PWHL Gameday: NY Sirens at Ottawa Charge\u00A0\u00A0\u00A0[10 / 13]",
       },
       {
         src: "./images/sports/rafael_devers_graphic.webp",
-        caption: "Rafael Devers Social Media Feature",
+        caption:
+          "Rafael Devers Social Media Feature\u00A0\u00A0\u00A0[11 / 13]",
       },
       {
         src: "./images/sports/SaltLakeSwarm.jpg",
-        caption: "Salt Lake Swarm: Branding Exploration for Utah NHL",
+        caption:
+          "Salt Lake Swarm: Branding Exploration for Utah NHL\u00A0\u00A0\u00A0[12 / 13]",
       },
       {
         src: "./images/sports/wallpapers.webp",
-        caption: "NHL Heritage Series: Current players vs. younger selves.",
+        caption:
+          "NHL Heritage Series: Current players vs. younger selves.\u00A0\u00A0\u00A0[13 / 13000]",
       },
     ],
   },
@@ -362,23 +377,55 @@ document.addEventListener("DOMContentLoaded", () => {
     if (index >= currentProjectImages.length) index = 0;
     else if (index < 0) index = currentProjectImages.length - 1;
     currentImageIndex = index;
-    const currentImage = currentProjectImages[currentImageIndex];
-    modalImage.src = currentImage.src;
-    modalImage.alt = currentImage.caption;
-    modalCaption.textContent = currentImage.caption;
+
+    const currentItem = currentProjectImages[currentImageIndex];
+    const modalImage = document.getElementById("modal-image");
+    const slideshowContainer = document.querySelector(".slideshow-container");
+
+    // Remove any existing iframes first
+    const existingIframe = slideshowContainer.querySelector("iframe");
+    if (existingIframe) existingIframe.remove();
+
+    if (currentItem.format === "pp") {
+      // Hide the image, create and show the iframe
+      modalImage.style.display = "none";
+      const iframe = document.createElement("iframe");
+      iframe.src = currentItem.url;
+      iframe.style.width = "100%";
+      iframe.style.height = "450px";
+      iframe.style.border = "none";
+      // Insert iframe before the buttons
+      slideshowContainer.insertBefore(iframe, modalImage);
+    } else {
+      // Show the image, hide the iframe (already removed above)
+      modalImage.style.display = "block";
+      modalImage.src = currentItem.src;
+      modalImage.alt = currentItem.caption;
+    }
+
+    modalCaption.textContent = currentItem.caption;
   }
 
   function renderAllImagesForMobile() {
     if (!slideshowContainer) return;
     slideshowContainer.innerHTML = "";
-    currentProjectImages.forEach((imgObj) => {
-      const img = document.createElement("img");
-      img.src = imgObj.src;
-      img.className = "modal-image";
+    currentProjectImages.forEach((item) => {
+      if (item.format === "pp") {
+        const iframe = document.createElement("iframe");
+        iframe.src = item.url;
+        iframe.className = "modal-image"; // Use same class for styling
+        iframe.style.height = "300px";
+        iframe.style.width = "100%";
+        slideshowContainer.appendChild(iframe);
+      } else {
+        const img = document.createElement("img");
+        img.src = item.src;
+        img.className = "modal-image";
+        slideshowContainer.appendChild(img);
+      }
       const caption = document.createElement("div");
       caption.className = "modal-caption";
-      caption.textContent = imgObj.caption;
-      slideshowContainer.appendChild(img);
+      caption.textContent = item.caption;
       slideshowContainer.appendChild(caption);
     });
   }
